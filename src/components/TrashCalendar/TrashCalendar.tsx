@@ -2,7 +2,6 @@ import {
   Container,
   Title,
   TrashContainer,
-  PaperContainer,
   Icon,
   DateContainer,
 } from "./Components";

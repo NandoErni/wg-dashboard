@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Icon = styled.div`
-  font-size: 2em;
+  font-size: 2.5em;
 `;
 
 export const TimeRemaining = styled.div`

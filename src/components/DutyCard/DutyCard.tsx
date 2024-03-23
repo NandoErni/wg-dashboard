@@ -1,15 +1,66 @@
+import { useState } from "react";
 import { Title, Name, Card, Icon } from "./Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Modal from "react-modal";
+import DutyModal from "./DutyModal";
+import { Duty } from "../../data/duties";
 
-const DutyCard = (props: any) => {
+type DutyCardProps = {
+  name: string;
+  duty: Duty;
+};
+
+const customStyles = {
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 0.75)",
+  },
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#282c34",
+    borderRadius: "20px",
+    border: "0px",
+    height: "80vh",
+    width: "40vw",
+  },
+};
+
+const DutyCard = (props: DutyCardProps) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {}
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
-    <Card>
-      <Icon>
-        <FontAwesomeIcon icon={props.icon} />
-      </Icon>
-      <Title>{props.dutyName}</Title>
-      <Name>{props.name}</Name>
-    </Card>
+    <>
+      <Card onClick={openModal}>
+        <Icon>
+          <FontAwesomeIcon icon={props.duty.icon} />
+        </Icon>
+        <Title>{props.duty.name}</Title>
+        <Name>{props.name}</Name>
+      </Card>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+        closeTimeoutMS={500}
+      >
+        <DutyModal closeModal={closeModal} duty={props.duty} />
+      </Modal>
+    </>
   );
 };
 

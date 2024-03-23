@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  height: min(30vh, 30vw);
-  width: min(30vh, 30vw);
+  width: 18vw;
+  min-width: 200px;
   margin: 20px;
   padding: 20px;
 
   text-align: center;
-  border: 1px solid #282c34;
+  border: 0px solid #282c34;
   border-radius: 20px;
   background-color: #383c44;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

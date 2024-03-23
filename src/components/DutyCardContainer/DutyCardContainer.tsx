@@ -1,13 +1,13 @@
 import { Container } from "./Components";
 import DutyCard from "../DutyCard/DutyCard";
-import { faPoo, faUtensils, faBroom } from "@fortawesome/free-solid-svg-icons";
+import { Duties } from "../../data/duties";
 
-const DutyCardContainer = (props: any) => {
+const DutyCardContainer = (props: { duties: Duties }) => {
   return (
     <Container>
-      <DutyCard dutyName="Bad" name="Nando" icon={faPoo} />
-      <DutyCard dutyName="Boden" name="Timon" icon={faBroom} />
-      <DutyCard dutyName="Küche" name="Lauro" icon={faUtensils} />{" "}
+      <DutyCard duty={props.duties.bathroom} name="Lauro" />
+      <DutyCard duty={props.duties.floor} name="Timon" />
+      <DutyCard duty={props.duties.kitchen} name="Nando" />
     </Container>
   );
 };
