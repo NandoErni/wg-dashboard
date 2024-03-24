@@ -6,14 +6,22 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Icon, TimeRemaining } from "./Components";
+import useRecurringDate, {
+  getDayDifference,
+} from "../../hooks/useRecurringDate";
 
 const DutyCycleCounter = () => {
+  const nextCycleChange = useRecurringDate(new Date(2024, 2, 11), 14);
+  const now = new Date();
+  const daysUntilNextChange = getDayDifference(now, nextCycleChange);
   return (
     <Container>
       <Icon>
         <FontAwesomeIcon icon={faHourglassStart} />
       </Icon>
-      <TimeRemaining>13 Days</TimeRemaining>
+      <TimeRemaining>
+        {daysUntilNextChange} Day{daysUntilNextChange === 1 ? "" : "s"}
+      </TimeRemaining>
     </Container>
   );
 };

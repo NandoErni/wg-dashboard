@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Container, TimeContainer, DateContainer } from "./Components";
 
 const dateFormatOptions: any = {
@@ -11,7 +12,14 @@ const timeFormatOptions: any = {
   minute: "numeric",
 };
 const SmallClock = () => {
-  let dateTime: Date = new Date();
+  const [dateTime, setDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDateTime(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   const dateString = dateTime.toLocaleString("de-CH", dateFormatOptions);
   const timeString = dateTime.toLocaleString("de-CH", timeFormatOptions);
