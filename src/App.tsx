@@ -12,7 +12,7 @@ function App() {
         <h2>Witz des Tages</h2>
       </Menu>
       <div className="App" id="outer-container">
-        <div id="page-wrap">
+        <div id="page-wrap" style={{ height: "100vh" }}>
           <DutyPage />
         </div>
       </div>

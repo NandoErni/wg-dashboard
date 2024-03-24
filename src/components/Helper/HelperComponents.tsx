@@ -9,3 +9,10 @@ export const FlexContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+export const FlexSpreadList = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+`;
