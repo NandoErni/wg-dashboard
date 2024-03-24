@@ -31,6 +31,7 @@ const customStyles = {
 
 const DutyCard = (props: DutyCardProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  Modal.setAppElement("#root");
   function openModal() {
     setIsOpen(true);
   }

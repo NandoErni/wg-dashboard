@@ -22,14 +22,14 @@ const DutyModal = (props: DutyModalProps) => {
       <Seperator />
       <Title>Aufgaben</Title>
       <TasksList>
-        {props.duty.generalTasks.map((task) => (
-          <li>{task}</li>
+        {props.duty.generalTasks.map((task, i) => (
+          <li key={i}>{task}</li>
         ))}
       </TasksList>
       <Title>Aufgaben im Detail</Title>
       <TasksList>
-        {props.duty.detailedTasks.map((task) => (
-          <li>
+        {props.duty.detailedTasks.map((task, i) => (
+          <li key={i}>
             {task.task}{" "}
             {task.frequencyInWeeks === 1
               ? "jede Woche"
