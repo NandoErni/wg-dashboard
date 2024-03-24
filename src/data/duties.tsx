@@ -23,7 +23,7 @@ export const DUTIES: Duties = {
   bathroom: {
     name: "Bad",
     quote:
-      "Wer jemandem die Schüssel scheisst, muss mit den Konsequenzen rechnen!",
+      "Wer jemandem in die Schüssel scheisst, muss mit den Konsequenzen rechnen!",
     icon: faPoo,
     generalTasks: ["Bad", "Kericht", "Kompost"],
     detailedTasks: [

@@ -1,21 +1,22 @@
 import "./style/App.css";
-import DutyCardContainer from "./components/DutyCardContainer/DutyCardContainer";
-import DutyCycleCounter from "./components/DutyCycleCounter/DutyCycleCounter";
-import SmallClock from "./components/Clock/SmallClock";
-import TrashCalendar from "./components/TrashCalendar/TrashCalendar";
-import { FlexContainer } from "./components/Helper/HelperComponents";
-import { DUTIES } from "./data/duties";
+import DutyPage from "./pages/DutyPage";
+import { scaleRotate as Menu } from "react-burger-menu";
 
 function App() {
   return (
-    <div className="App">
-      <DutyCycleCounter />
-      <DutyCardContainer duties={DUTIES} />
-      <FlexContainer>
-        <TrashCalendar />
-        <SmallClock />
-      </FlexContainer>
-    </div>
+    <>
+      <Menu right pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+        <h2>Uhr</h2>
+        <h2>Ämtliplan</h2>
+        <h2>Lichter</h2>
+        <h2>Witz des Tages</h2>
+      </Menu>
+      <div className="App" id="outer-container">
+        <div id="page-wrap">
+          <DutyPage />
+        </div>
+      </div>
+    </>
   );
 }
 
