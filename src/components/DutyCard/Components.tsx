@@ -26,3 +26,27 @@ export const Title = styled.div`
 export const Name = styled.div`
   font-size: 2em;
 `;
+
+export const DutyModalContainer = styled.div`
+  height: 100%;
+  width: 100%;
+`;
+
+export const DutyModalTitle = styled.div`
+  text-align: center;
+  font-size: 2em;
+  margin: 0.8em;
+`;
+
+export const Quote = styled.div`
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #ffffffa0;
+`;
+
+export const Seperator = styled.hr`
+  margin: 3em;
+`;
+
+export const TasksList = styled.ul``;

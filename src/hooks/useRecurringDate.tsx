@@ -17,7 +17,11 @@ export const getDayDifference = (date1: Date, date2: Date) => {
   return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 };
 
-const useRecurringDate = (initDate: Date, intervalInDays: number) => {
+const useRecurringDate = (
+  initDate: Date,
+  intervalInDays: number,
+  changeDateListener: (newDate: Date) => void = (p) => {}
+) => {
   const [nextDate, setNextDate] = useState(initDate);
 
   useEffect(() => {
@@ -32,6 +36,7 @@ const useRecurringDate = (initDate: Date, intervalInDays: number) => {
       let newDate = new Date(nextDate);
       newDate.setDate(newDate.getDate() + intervalInDays);
       setNextDate(newDate);
+      changeDateListener(newDate);
     }
   };
   updateNewDate();

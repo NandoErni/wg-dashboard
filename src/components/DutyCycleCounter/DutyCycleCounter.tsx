@@ -14,6 +14,7 @@ const DutyCycleCounter = () => {
   const nextCycleChange = useRecurringDate(new Date(2024, 2, 11), 14);
   const now = new Date();
   const daysUntilNextChange = getDayDifference(now, nextCycleChange);
+
   let hourGlassIcon = <FontAwesomeIcon icon={faHourglassEnd} />;
   if (daysUntilNextChange >= 9) {
     hourGlassIcon = <FontAwesomeIcon icon={faHourglassStart} />;
