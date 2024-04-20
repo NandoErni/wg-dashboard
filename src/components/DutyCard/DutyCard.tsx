@@ -21,7 +21,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    backgroundColor: "#282c34",
+    backgroundColor: "#1a5e79",
     borderRadius: "20px",
     border: "0px",
     height: "80vh",
