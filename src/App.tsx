@@ -7,13 +7,17 @@ import STRINGS from "./data/strings";
 
 function App() {
   useEffect(() => {
-    i18next.init({
-      lng: "en",
-      debug: true,
-      resources: {
-        ...STRINGS,
-      },
-    });
+    i18next
+      .init({
+        lng: "en",
+        debug: true,
+        resources: {
+          ...STRINGS,
+        },
+      })
+      .then(() => {
+        i18next.reloadResources();
+      });
   }, []);
 
   return (
@@ -25,7 +29,7 @@ function App() {
         <h2>{i18next.t("burgerMenu.jokeOfTheDay")}</h2>
       </Menu>
       <div className="App" id="outer-container">
-        <div id="page-wrap" style={{ height: "100vh" }}>
+        <div id="page-wrap" style={{ height: "100%" }}>
           <DutyPage />
         </div>
       </div>
