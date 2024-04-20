@@ -8,6 +8,7 @@ import {
   Title,
   Seperator,
 } from "./Components";
+import { useTranslation } from "react-i18next";
 
 interface DutyModalProps {
   closeModal: any;
@@ -15,6 +16,7 @@ interface DutyModalProps {
 }
 
 const DutyModal = (props: DutyModalProps) => {
+  const { t, i18n } = useTranslation();
   return (
     <DutyModalContainer>
       <DutyModalTitle>{props.duty.name}</DutyModalTitle>
@@ -27,14 +29,14 @@ const DutyModal = (props: DutyModalProps) => {
           <li key={i}>{task}</li>
         ))}
       </TasksList>
-      <Title>{i18next.t("dutyCard.tasksInDetail")}</Title>
+      <Title>{t("dutyCard.tasksInDetail")}</Title>
       <TasksList>
         {props.duty.detailedTasks.map((task, i) => (
           <li key={i}>
             {task.task}{" "}
             {task.frequencyInWeeks === 1
-              ? i18next.t("dutyCard.everyWeek")
-              : i18next.t("dutyCard.everyXWeeks", {
+              ? t("dutyCard.everyWeek")
+              : t("dutyCard.everyXWeeks", {
                   count: task.frequencyInWeeks,
                 })}
           </li>

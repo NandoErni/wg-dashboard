@@ -13,8 +13,11 @@ const STRINGS: { en: StringType; de: StringType } = {
         everyWeek: "every week",
         everyXWeeks_one: "every {{count}} week",
         everyXWeeks_other: "every {{count}} weeks",
-        day_one: "{{count}} day",
-        day_other: "{{count}} days",
+        day_one: "{{count}} Day",
+        day_other: "{{count}} Days",
+      },
+      trashCalendar: {
+        title: "Trash calendar",
       },
     },
   },
@@ -32,8 +35,11 @@ const STRINGS: { en: StringType; de: StringType } = {
         everyWeek: "Jede Woche",
         everyXWeeks_one: "Alle {{count}} Woche",
         everyXWeeks_other: "Alle {{count}} Wochen",
-        day_one: "{{count}} day",
-        day_other: "{{count}} days",
+        day_one: "{{count}} Tag",
+        day_other: "{{count}} Tage",
+      },
+      trashCalendar: {
+        title: "Abfallkalender",
       },
     },
   },
@@ -57,6 +63,9 @@ type StringType = {
       everyXWeeks_other: string;
       day_one: string;
       day_other: string;
+    };
+    trashCalendar: {
+      title: string;
     };
   };
 };

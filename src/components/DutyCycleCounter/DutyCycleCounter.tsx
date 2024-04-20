@@ -9,8 +9,10 @@ import { Container, Icon, TimeRemaining } from "./Components";
 import useRecurringDate, {
   getDayDifference,
 } from "../../hooks/useRecurringDate";
+import { useTranslation } from "react-i18next";
 
 const DutyCycleCounter = () => {
+  const { t, i18n } = useTranslation();
   const nextCycleChange = useRecurringDate(new Date(2024, 2, 11), 14);
   const now = new Date();
   const daysUntilNextChange = getDayDifference(now, nextCycleChange);
@@ -25,7 +27,7 @@ const DutyCycleCounter = () => {
     <Container>
       <Icon>{hourGlassIcon}</Icon>
       <TimeRemaining>
-        {daysUntilNextChange} Day{daysUntilNextChange === 1 ? "" : "s"}
+        {t("dutyCard.day", { count: daysUntilNextChange })}
       </TimeRemaining>
     </Container>
   );

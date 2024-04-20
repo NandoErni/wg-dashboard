@@ -5,8 +5,6 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 function App() {
-  useEffect(() => {}, []);
-
   const { t, i18n } = useTranslation();
 
   return (

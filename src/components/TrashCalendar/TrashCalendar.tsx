@@ -10,15 +10,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useRecurringDate, {
   dateFormatOptions,
 } from "../../hooks/useRecurringDate";
+import { useTranslation } from "react-i18next";
 
 const TrashCalendar = () => {
   const trashDate = useRecurringDate(new Date(2024, 2, 21), 7);
   const paperDate = useRecurringDate(new Date(2024, 2, 21), 14);
 
-  console.log(trashDate);
+  const { t, i18n } = useTranslation();
   return (
     <Container>
-      <Title>Abfallkalender</Title>
+      <Title>{t("trashCalendar.title")}</Title>
       <TrashContainer>
         <Icon>
           <FontAwesomeIcon icon={faDumpster} />
