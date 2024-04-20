@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const TimeContainer = styled.div`
-  font-size: 800%;
+  font-size: 900%;
   font-weight: 100;
 `;
 
