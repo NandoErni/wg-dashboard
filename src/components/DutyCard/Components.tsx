@@ -28,7 +28,6 @@ export const Name = styled.div`
 `;
 
 export const DutyModalContainer = styled.div`
-  height: 100%;
   width: 100%;
 `;
 

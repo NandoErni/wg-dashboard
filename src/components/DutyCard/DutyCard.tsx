@@ -56,7 +56,7 @@ const DutyCard = (props: DutyCardProps) => {
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        contentLabel="modal"
         closeTimeoutMS={500}
       >
         <DutyModal closeModal={closeModal} duty={props.duty} />
