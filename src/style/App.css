@@ -92,8 +92,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #ffffff;
 }
 
-/* @media screen and (max-width: 55rem) {
-  .bm-burger-button {
-    display: none;
-  }
-} */
+.rw-container-main {
+  background: #00000025 !important;
+}

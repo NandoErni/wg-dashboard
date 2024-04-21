@@ -12,9 +12,14 @@ export type StringType = {
   translation: {
     burgerMenu: {
       dutyPlan: string;
-      clock: string;
+      dashboard: string;
       lights: string;
       jokeOfTheDay: string;
+      calendar: string;
+      weather: string;
+      bus: string;
+      plants: string;
+      settings: string;
     };
     dutyCard: {
       tasks: string;

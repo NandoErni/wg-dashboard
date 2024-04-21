@@ -4,9 +4,14 @@ const STRING_DE: StringType = {
   translation: {
     burgerMenu: {
       dutyPlan: "Ämtliplan",
-      clock: "Uhr",
+      dashboard: "Dashboard",
       lights: "Lichter",
       jokeOfTheDay: "Witz des Tages",
+      calendar: "Kalender",
+      weather: "Wetter",
+      bus: "Busfahrplan",
+      plants: "Pflanzen",
+      settings: "Einstellungen",
     },
     dutyCard: {
       tasks: "Aufgaben",

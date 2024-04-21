@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Title, Name, Card, Icon } from "./Components";
+import { SubTitle, Name, Card, Icon } from "./Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from "react-modal";
 import DutyModal from "./DutyModal";
@@ -48,7 +48,7 @@ const DutyCard = (props: DutyCardProps) => {
         <Icon>
           <FontAwesomeIcon icon={props.duty.icon} />
         </Icon>
-        <Title>{props.duty.name}</Title>
+        <SubTitle>{props.duty.name}</SubTitle>
         <Name>{props.name}</Name>
       </Card>
       <Modal

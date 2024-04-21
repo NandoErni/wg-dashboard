@@ -18,8 +18,16 @@ export const Icon = styled.div`
   color: #ffffff80;
 `;
 
+export const SubTitle = styled.div`
+  font-size: 1.1em;
+  font-weight: lighter;
+  color: #ffffff;
+`;
+
 export const Title = styled.div`
-  font-size: 1em;
+  margin-top: 1em;
+  font-size: 2em;
+  text-align: center;
   color: #ffffff;
 `;
 
@@ -29,6 +37,7 @@ export const Name = styled.div`
 
 export const DutyModalContainer = styled.div`
   width: 100%;
+  background-color: #1a5e79;
 `;
 
 export const DutyModalTitle = styled.div`
