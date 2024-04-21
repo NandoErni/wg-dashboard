@@ -13,56 +13,121 @@ export type Duty = {
   detailedTasks: { task: string; frequencyInWeeks: number }[];
 };
 
-export type Duties = {
+export type GetDuties = (t: Function) => {
   bathroom: Duty;
   floor: Duty;
   kitchen: Duty;
 };
 
-export const DUTIES: Duties = {
-  bathroom: {
-    name: "Bad",
-    quote:
-      "Wer jemandem in die Schüssel scheisst, muss mit den Konsequenzen rechnen!",
-    icon: faPoo,
-    generalTasks: ["Bad", "Kericht", "Kompost"],
-    detailedTasks: [
-      { task: "WC Putzen", frequencyInWeeks: 1 },
-      { task: "Lavabo Putzen", frequencyInWeeks: 1 },
-      { task: "Dusche putzen", frequencyInWeeks: 1 },
-      { task: "Gestelle putzen", frequencyInWeeks: 2 },
-      { task: "Kericht raus bringen", frequencyInWeeks: 1 },
-      { task: "Kompost raus bringen", frequencyInWeeks: 1 },
-    ],
-  },
+export const GET_DUTIES: GetDuties = (t) => {
+  return {
+    bathroom: {
+      name: t("duties.bathroom.name"),
+      quote: t("duties.bathroom.quote"),
+      icon: faPoo,
+      generalTasks: [
+        t("duties.bathroom.generalTasks.bathroom"),
+        t("duties.bathroom.generalTasks.trash"),
+        t("duties.bathroom.generalTasks.compost"),
+      ],
+      detailedTasks: [
+        {
+          task: t("duties.bathroom.detailedTasks.cleanToilet"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.bathroom.detailedTasks.cleanSink"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.bathroom.detailedTasks.cleanShower"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.bathroom.detailedTasks.cleanFurniture"),
+          frequencyInWeeks: 2,
+        },
+        {
+          task: t("duties.bathroom.detailedTasks.disposeTrash"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.bathroom.detailedTasks.disposeCompost"),
+          frequencyInWeeks: 1,
+        },
+      ],
+    },
 
-  floor: {
-    name: "Böden",
-    quote: "Der Boden hält uns für immer und ewig!",
-    icon: faBroom,
-    generalTasks: ["Wohnzimmer", "Boden", "Pflanzen", "Glas / Dosen"],
-    detailedTasks: [
-      { task: "Sofa reinigen", frequencyInWeeks: 2 },
-      { task: "Lampen", frequencyInWeeks: 1 },
-      { task: "Staub saugen", frequencyInWeeks: 1 },
-      { task: "Nass aufnehmen", frequencyInWeeks: 2 },
-      { task: "Glas & Dosen entsorgen", frequencyInWeeks: 1 },
-      { task: "Pflanzen giessen", frequencyInWeeks: 1 },
-    ],
-  },
+    floor: {
+      name: t("duties.floor.name"),
+      quote: t("duties.floor.quote"),
+      icon: faBroom,
+      generalTasks: [
+        t("duties.floor.generalTasks.livingRoom"),
+        t("duties.floor.generalTasks.floor"),
+        t("duties.floor.generalTasks.plants"),
+        t("duties.floor.generalTasks.glasAndCans"),
+      ],
+      detailedTasks: [
+        {
+          task: t("duties.floor.detailedTasks.cleanSofa"),
+          frequencyInWeeks: 2,
+        },
+        { task: t("duties.floor.detailedTasks.lamps"), frequencyInWeeks: 1 },
+        {
+          task: t("duties.floor.detailedTasks.vacuumClean"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.floor.detailedTasks.wipeFloor"),
+          frequencyInWeeks: 2,
+        },
+        {
+          task: t("duties.floor.detailedTasks.disposeGlasAndCans"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.floor.detailedTasks.waterPlants"),
+          frequencyInWeeks: 1,
+        },
+      ],
+    },
 
-  kitchen: {
-    name: "Küche",
-    quote: "Ohne ein El Tony kann selbst der aller beste nichts erreichen!",
-    icon: faUtensils,
-    generalTasks: ["Küche", "PET & Plastik Flaschen", "Karton & Papier"],
-    detailedTasks: [
-      { task: "Herd, Tisch und Lavabo Putzen", frequencyInWeeks: 1 },
-      { task: "Oberflächen Putzen", frequencyInWeeks: 1 },
-      { task: "Abfallschrank", frequencyInWeeks: 2 },
-      { task: "Dampfabzug", frequencyInWeeks: 2 },
-      { task: "Karton und Papier entsorgen", frequencyInWeeks: 2 },
-      { task: "PET und Plastik flaschen entsorgen", frequencyInWeeks: 1 },
-    ],
-  },
+    kitchen: {
+      name: t("duties.kitchen.name"),
+      quote: t("duties.kitchen.quote"),
+      icon: faUtensils,
+      generalTasks: [
+        t("duties.kitchen.generalTasks.kitchen"),
+        t("duties.kitchen.generalTasks.petAndPlasticBottles"),
+        t("duties.kitchen.generalTasks.cardBoardAndPaper"),
+      ],
+      detailedTasks: [
+        {
+          task: t("duties.kitchen.detailedTasks.cleanStoveTableAndSink"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.kitchen.detailedTasks.cleanSurfaces"),
+          frequencyInWeeks: 1,
+        },
+        {
+          task: t("duties.kitchen.detailedTasks.cleanTrashCabinet"),
+          frequencyInWeeks: 2,
+        },
+        {
+          task: t("duties.kitchen.detailedTasks.cleanSteamExhaust"),
+          frequencyInWeeks: 2,
+        },
+        {
+          task: t("duties.kitchen.detailedTasks.disposeCardboardAndPaper"),
+          frequencyInWeeks: 2,
+        },
+        {
+          task: t("duties.kitchen.detailedTasks.disposePetAndPlasticBottles"),
+          frequencyInWeeks: 1,
+        },
+      ],
+    },
+  };
 };

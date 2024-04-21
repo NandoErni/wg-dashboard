@@ -6,13 +6,13 @@ import {
   FlexSpreadList,
 } from "../components/Helper/HelperComponents";
 import TrashCalendar from "../components/TrashCalendar/TrashCalendar";
-import { DUTIES } from "../data/duties";
+import { GET_DUTIES } from "../data/duties";
 
 const DutyPage = () => {
   return (
     <FlexSpreadList>
       <DutyCycleCounter />
-      <DutyCardContainer duties={DUTIES} />
+      <DutyCardContainer getDuties={GET_DUTIES} />
       <FlexContainer>
         <TrashCalendar />
         <SmallClock />

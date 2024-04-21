@@ -25,7 +25,7 @@ const TrashCalendar = () => {
           <FontAwesomeIcon icon={faDumpster} />
         </Icon>
         <DateContainer>
-          {trashDate.toLocaleString("de-CH", dateFormatOptions)}
+          {trashDate.toLocaleString(i18n.language, dateFormatOptions)}
         </DateContainer>
       </TrashContainer>
       <TrashContainer>
@@ -33,7 +33,7 @@ const TrashCalendar = () => {
           <FontAwesomeIcon icon={faNewspaper} />
         </Icon>
         <DateContainer>
-          {paperDate.toLocaleString("de-CH", dateFormatOptions)}
+          {paperDate.toLocaleString(i18n.language, dateFormatOptions)}
         </DateContainer>
       </TrashContainer>
     </Container>
