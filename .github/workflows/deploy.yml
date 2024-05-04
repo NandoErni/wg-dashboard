@@ -8,6 +8,7 @@ jobs:
       - run: npm --version
       - uses: actions/checkout@v2
       - run: cd $GITHUB_WORKSPACE
+      - run: ls
       - run: npm run build
       # - name: Upload ftp
       #   uses: genietim/ftp-action@releases/v4
