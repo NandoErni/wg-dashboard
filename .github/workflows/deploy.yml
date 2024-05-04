@@ -1,7 +1,19 @@
+name: Deploy to server via ftp
 on: push
 jobs:
-  first-job:
-    runs-on: windows-latest
+  deploy:
+    runs-on: ubuntu-latest
     steps:
       - run: node --version
       - run: npm --version
+      - uses: actions/checkout@v2
+      - run: cd $GITHUB_WORKSPACE
+      - run: npm run build
+      # - name: Upload ftp
+      #   uses: genietim/ftp-action@releases/v4
+      #   with:
+      #     host: ${{ secrets.FTP_SERVER }}
+      #     user: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     localDir: "build"
+      #     remoteDir: "www"
