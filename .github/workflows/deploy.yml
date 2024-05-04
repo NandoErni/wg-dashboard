@@ -10,7 +10,7 @@ jobs:
       - run: cd $GITHUB_WORKSPACE
       - run: ls
       - name: build application
-        run: npm run build
+        run: npm run
         env:
           CI: false
       # - name: Upload ftp
