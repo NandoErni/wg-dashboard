@@ -13,11 +13,11 @@ jobs:
         run: npm run build
         env:
           CI: false
-      # - name: Upload ftp
-      #   uses: genietim/ftp-action@releases/v4
-      #   with:
-      #     host: ${{ secrets.FTP_SERVER }}
-      #     user: ${{ secrets.FTP_USERNAME }}
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     localDir: "build"
-      #     remoteDir: "www"
+      - name: Upload ftp
+        uses: genietim/ftp-action@releases/v4
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "build"
+          remoteDir: "public_html/wg-dashboard/test"
