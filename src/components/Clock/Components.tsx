@@ -6,11 +6,11 @@ export const Container = styled.div`
 `;
 
 export const TimeContainer = styled.div`
-  font-size: 12em;
+  font-size: 23cqmin;
   font-weight: 100;
 `;
 
 export const DateContainer = styled.div`
-  font-size: 4em;
+  font-size: 4cqw;
   font-weight: 100;
 `;

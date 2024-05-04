@@ -1,2 +1,1 @@
-declare module "react-open-weather"
-declare module "react-weather"
+declare module "weather-icons-react"

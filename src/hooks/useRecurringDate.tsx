@@ -28,7 +28,9 @@ const useRecurringDate = (
     const interval = setInterval(() => {
       updateNewDate();
     }, HOUR_IN_MS);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   const updateNewDate = () => {

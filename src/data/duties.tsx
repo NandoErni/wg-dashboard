@@ -100,7 +100,7 @@ export const GET_DUTIES: GetDuties = (t) => {
       generalTasks: [
         t("duties.kitchen.generalTasks.kitchen"),
         t("duties.kitchen.generalTasks.petAndPlasticBottles"),
-        t("duties.kitchen.generalTasks.cardBoardAndPaper"),
+        t("duties.kitchen.generalTasks.cardboardAndPaper"),
       ],
       detailedTasks: [
         {

@@ -19,6 +19,8 @@ function App() {
     <>
       <Menu
         isOpen={isOpen}
+        onOpen={() => setIsOpen(true)}
+        onClose={() => setIsOpen(false)}
         right
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}

@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  margin: 4em;
-`;
+export const Container = styled.div``;
 
 export const Title = styled.div`
-  font-size: 5.4em;
+  font-size: 5.4cqw;
   margin-bottom: 10px;
   font-weight: 200;
 `;
@@ -20,6 +18,6 @@ export const Icon = styled.div`
   margin-bottom: 10px;
 `;
 export const DateContainer = styled.div`
-  font-size: 2.9em;
+  font-size: 2.9cqw;
   font-weight: 100;
 `;

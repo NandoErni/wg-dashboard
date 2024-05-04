@@ -38,6 +38,38 @@ export type StringType = {
       floor: DutyStringType;
       kitchen: DutyStringType;
     };
+    weatherCodes: {
+      sunny: string;
+      clear: string;
+      mainlySunny: string;
+      mainlyClear: string;
+      partlyCloudy: string;
+      cloudy: string;
+      foggy: string;
+      rimeFog: string;
+      lightDrizzle: string;
+      drizzle: string;
+      heavyDrizzle: string;
+      lightFreezingDrizzle: string;
+      freezingDrizzle: string;
+      lightRain: string;
+      rain: string;
+      heavyRain: string;
+      lightFreezingRain: string;
+      freezingRain: string;
+      lightSnow: string;
+      snow: string;
+      heavySnow: string;
+      snowGrains: string;
+      lightShowers: string;
+      showers: string;
+      heavyShowers: string;
+      lightSnowShowers: string;
+      snowShowers: string;
+      thunderstorm: string;
+      lightThunderstormsWithHail: string;
+      thunderstormWithHail: string;
+    };
   };
 };
 

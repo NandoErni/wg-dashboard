@@ -13,6 +13,6 @@ export const FlexContainer = styled.div`
 export const FlexSpreadList = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
+  justify-content: space-evenly;
+  min-height: 100vh;
 `;
