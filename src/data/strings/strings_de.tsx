@@ -32,7 +32,7 @@ const STRING_DE: StringType = {
           "Wer jemandem in die Schüssel scheisst, muss mit den Konsequenzen rechnen!",
         generalTasks: {
           bathroom: "Bad",
-          trash: "Kericht",
+          trash: "Kehricht",
           compost: "Kompost",
         },
         detailedTasks: {
@@ -40,7 +40,7 @@ const STRING_DE: StringType = {
           cleanSink: "Lavabo putzen",
           cleanShower: "Dusche putzen",
           cleanFurniture: "Gestelle putzen",
-          disposeTrash: "Kericht entsorgen",
+          disposeTrash: "Kehricht entsorgen",
           disposeCompost: "Kompost entsorgen",
         },
       },
