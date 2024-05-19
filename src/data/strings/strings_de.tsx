@@ -12,6 +12,7 @@ const STRING_DE: StringType = {
       bus: "Busfahrplan",
       plants: "Pflanzen",
       settings: "Einstellungen",
+      deliveryDriver: "Essensfahrer",
     },
     dutyCard: {
       tasks: "Aufgaben",

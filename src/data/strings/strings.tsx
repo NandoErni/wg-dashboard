@@ -20,6 +20,7 @@ export type StringType = {
       bus: string;
       plants: string;
       settings: string;
+      deliveryDriver: string;
     };
     dutyCard: {
       tasks: string;

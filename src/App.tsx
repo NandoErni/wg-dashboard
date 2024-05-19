@@ -4,6 +4,7 @@ import { scaleRotate as Menu } from "react-burger-menu";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";
+import DeliveryDriverPage from "./pages/DeliveryDriverPage";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -30,6 +31,10 @@ function App() {
         </h2>
         <h2 onClick={() => changePage(<DutyPage />)}>
           {t("burgerMenu.dutyPlan")}
+        </h2>
+
+        <h2 onClick={() => changePage(<DeliveryDriverPage />)}>
+          {t("burgerMenu.deliveryDriver")}
         </h2>
         <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
