@@ -14,7 +14,7 @@ const DeliveryDriverPage = () => {
     infinite: true,
     indicators: true,
 
-    arrows: true,
+    arrows: false,
     canSwipe: true,
   };
   return (
