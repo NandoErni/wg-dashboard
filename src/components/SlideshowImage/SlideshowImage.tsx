@@ -1,9 +1,10 @@
-import { Container, Image } from "./Components";
+import { Container, Image, Name } from "./Components";
 
-const SlideshowImage = ({ image }: { image: string }) => {
+const SlideshowImage = ({ image, name }: { image: string; name: string }) => {
   return (
     <Container>
       <Image src={image} />
+      <Name>{name}</Name>
     </Container>
   );
 };

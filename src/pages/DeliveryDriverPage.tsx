@@ -20,10 +20,10 @@ const DeliveryDriverPage = () => {
   return (
     <FlexSpreadList>
       <Fade {...fadeProperties}>
-        <SlideshowImage image={Eduardo} />
-        <SlideshowImage image={Dervish} />
-        <SlideshowImage image={Nazim} />
-        <SlideshowImage image={Avtar} />
+        <SlideshowImage image={Eduardo} name="Eduardo" />
+        <SlideshowImage image={Dervish} name="Dervish" />
+        <SlideshowImage image={Nazim} name="Nazim" />
+        <SlideshowImage image={Avtar} name="Avtar" />
       </Fade>
     </FlexSpreadList>
   );

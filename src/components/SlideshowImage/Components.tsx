@@ -12,3 +12,7 @@ export const Image = styled.img`
   max-height: 100%;
   max-width: 100%;
 `;
+
+export const Name = styled.h1`
+  margin: 10px;
+`;
