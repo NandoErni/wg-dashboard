@@ -13,6 +13,12 @@ export const Image = styled.img`
   max-width: 100%;
 `;
 
-export const Name = styled.h1`
+export const Name = styled.h1``;
+
+export const FactsContainer = styled.div`
   margin: 10px;
 `;
+
+export const Date = styled.h3``;
+
+export const Order = styled.h3``;

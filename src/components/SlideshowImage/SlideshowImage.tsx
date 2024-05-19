@@ -1,10 +1,31 @@
-import { Container, Image, Name } from "./Components";
+import {
+  Container,
+  Image,
+  Name,
+  FactsContainer,
+  Date,
+  Order,
+} from "./Components";
 
-const SlideshowImage = ({ image, name }: { image: string; name: string }) => {
+const SlideshowImage = ({
+  image,
+  name,
+  date,
+  order,
+}: {
+  image: string;
+  name: string;
+  date: string;
+  order: string;
+}) => {
   return (
     <Container>
       <Image src={image} />
-      <Name>{name}</Name>
+      <FactsContainer>
+        <Name>{name}</Name>
+        <Date>Bestellt am {date}</Date>
+        <Order>{order}</Order>
+      </FactsContainer>
     </Container>
   );
 };
