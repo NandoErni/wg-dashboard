@@ -4,19 +4,20 @@ import {
   Name,
   FactsContainer,
   Date,
-  Order,
+  OrderItem,
+  OrderTitle,
 } from "./Components";
 
 const SlideshowImage = ({
   image,
   name,
   date,
-  order,
+  orderItems,
 }: {
   image: string;
   name: string;
   date: string;
-  order: string;
+  orderItems: string[];
 }) => {
   return (
     <Container>
@@ -24,7 +25,12 @@ const SlideshowImage = ({
       <FactsContainer>
         <Name>{name}</Name>
         <Date>Bestellt am {date}</Date>
-        <Order>{order}</Order>
+        <OrderTitle>Bestellung:</OrderTitle>
+        <ul>
+          {orderItems.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
       </FactsContainer>
     </Container>
   );

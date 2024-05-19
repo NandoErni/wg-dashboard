@@ -23,25 +23,32 @@ const DeliveryDriverPage = () => {
         <SlideshowImage
           image={Eduardo}
           date="16.04.2024"
-          order="6 Cheeseburger"
+          orderItems={[
+            "1 Homestyle Crispy Chicken Teriyaki",
+            "1 Cheeseburger",
+            "1 Happymeal",
+          ]}
           name="Eduardo"
         />
         <SlideshowImage
           image={Dervish}
           date="11.05.2024"
-          order="6 Cheeseburger"
+          orderItems={["1 Steakhouse", "1 Cheeseburger"]}
           name="Dervish"
         />
         <SlideshowImage
           image={Nazim}
           date="14.05.2024"
-          order="6 Cheeseburger"
+          orderItems={[
+            "1 Homestyle Crispy Chicken Honey Mustard",
+            "2 Cheeseburger",
+          ]}
           name="Nazim"
         />
         <SlideshowImage
           image={Avtar}
           date="15.05.2024"
-          order="6 Cheeseburger"
+          orderItems={["6 Cheeseburger"]}
           name="Avtar"
         />
       </Fade>

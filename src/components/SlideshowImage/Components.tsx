@@ -19,6 +19,9 @@ export const FactsContainer = styled.div`
   margin: 10px;
 `;
 
-export const Date = styled.h3``;
+export const Date = styled.p`
+  margin-bottom: 100px;
+`;
 
-export const Order = styled.h3``;
+export const OrderTitle = styled.h3``;
+export const OrderItem = styled.h4``;
