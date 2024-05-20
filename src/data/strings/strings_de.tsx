@@ -113,6 +113,10 @@ const STRING_DE: StringType = {
       lightThunderstormsWithHail: "Leichtes Gewitter mit Hagel",
       thunderstormWithHail: "Gewitter mit Hagel",
     },
+    deliveryDrivers: {
+      orderedOn: "Bestellt am",
+      order: "Bestellung:",
+    },
   },
 };
 

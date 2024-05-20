@@ -71,6 +71,10 @@ export type StringType = {
       lightThunderstormsWithHail: string;
       thunderstormWithHail: string;
     };
+    deliveryDrivers: {
+      orderedOn: string;
+      order: string;
+    };
   };
 };
 

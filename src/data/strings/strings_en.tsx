@@ -114,6 +114,10 @@ const STRING_EN: StringType = {
       lightThunderstormsWithHail: "Light Thunderstorm With Hail",
       thunderstormWithHail: "Thunderstorm With Hail",
     },
+    deliveryDrivers: {
+      orderedOn: "Ordered On",
+      order: "Order:",
+    },
   },
 };
 

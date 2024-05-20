@@ -3,7 +3,7 @@ import { SubTitle, Name, Card, Icon } from "./Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from "react-modal";
 import DutyModal from "./DutyModal";
-import { Duty } from "../../data/duties";
+import { Duty } from "../../data/Duties";
 
 type DutyCardProps = {
   name: string;

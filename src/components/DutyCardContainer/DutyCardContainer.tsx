@@ -1,6 +1,6 @@
 import { Container } from "./Components";
 import DutyCard from "../DutyCard/DutyCard";
-import { GetDuties } from "../../data/duties";
+import { GetDuties } from "../../data/Duties";
 import { useState } from "react";
 import useRecurringDate from "../../hooks/useRecurringDate";
 import { useTranslation } from "react-i18next";

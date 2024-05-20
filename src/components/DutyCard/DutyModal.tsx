@@ -1,5 +1,5 @@
 import i18next from "i18next";
-import { Duty } from "../../data/duties";
+import { Duty } from "../../data/Duties";
 import {
   DutyModalContainer,
   DutyModalTitle,

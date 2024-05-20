@@ -6,6 +6,12 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 70vh;
+  padding: 5cqw;
+`;
+
+export const ImageContainer = styled.div`
+  width: 50%;
+  height: 100%;
 `;
 
 export const Image = styled.img`
@@ -16,7 +22,8 @@ export const Image = styled.img`
 export const Name = styled.h1``;
 
 export const FactsContainer = styled.div`
-  margin: 10px;
+  padding: 10px;
+  width: 50%;
 `;
 
 export const Date = styled.p`
@@ -24,4 +31,3 @@ export const Date = styled.p`
 `;
 
 export const OrderTitle = styled.h3``;
-export const OrderItem = styled.h4``;
