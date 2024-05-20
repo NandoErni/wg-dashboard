@@ -13,6 +13,7 @@ const Weather = () => {
 
   useEffect(() => {
     updateWeatherCards();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentDatetimeHourlyState]);
 
   const updateWeatherCards = async () => {

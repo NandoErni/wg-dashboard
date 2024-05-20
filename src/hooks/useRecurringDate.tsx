@@ -1,8 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../App";
 
-const HOUR_IN_MS = 3600_000;
-
 export const dateFormatOptions: any = {
   year: "numeric",
   month: "long",
@@ -28,6 +26,7 @@ const useRecurringDate = (
 
   useEffect(() => {
     updateNewDate(currentDatetimeHourlyState);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentDatetimeHourlyState]);
 
   const updateNewDate = (currentDate: Date) => {

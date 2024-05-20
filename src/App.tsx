@@ -5,7 +5,6 @@ import { createContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";
 import DeliveryDriverPage from "./pages/DeliveryDriverPage";
-import { TFunction, i18n } from "i18next";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -19,7 +18,7 @@ export const AppContext = createContext<AppContextType>({
 });
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(<DashboardPage />);
   const [currentDate, setCurrentDate] = useState(new Date());

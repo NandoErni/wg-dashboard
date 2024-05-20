@@ -15,7 +15,7 @@ const timeFormatOptions: any = {
 };
 const SmallClock = () => {
   const [dateTime, setDateTime] = useState(new Date());
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { currentDatetimeState } = useContext(AppContext);
 
   useEffect(() => {
