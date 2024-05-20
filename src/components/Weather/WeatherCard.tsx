@@ -47,6 +47,7 @@ const WeatherCard = ({
           {weather.map((w, index) => (
             <DegreesText
               isHighlighted={isToday && index === currentWeatherIndex}
+              key={index}
             >
               {Math.round(w.temperature * 10) / 10}° C
             </DegreesText>

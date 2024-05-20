@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { AppContext } from "../App";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -23,25 +24,21 @@ const useRecurringDate = (
   changeDateListener: (newDate: Date) => void = (p) => {}
 ) => {
   const [nextDate, setNextDate] = useState(initDate);
+  const { currentDatetimeHourlyState } = useContext(AppContext);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      updateNewDate();
-    }, HOUR_IN_MS);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+    updateNewDate(currentDatetimeHourlyState);
+  }, [currentDatetimeHourlyState]);
 
-  const updateNewDate = () => {
-    if (nextDate < new Date()) {
+  const updateNewDate = (currentDate: Date) => {
+    if (nextDate < currentDate) {
       let newDate = new Date(nextDate);
       newDate.setDate(newDate.getDate() + intervalInDays);
       setNextDate(newDate);
       changeDateListener(newDate);
     }
   };
-  updateNewDate();
+  updateNewDate(new Date());
 
   return nextDate;
 };

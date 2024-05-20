@@ -22,6 +22,7 @@ const DeliveryDriverSlideshowImage = ({
   orderItems: string[];
 }) => {
   const { t, i18n } = useTranslation();
+
   return (
     <Container>
       <ImageContainer>
