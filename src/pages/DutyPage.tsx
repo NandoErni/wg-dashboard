@@ -6,7 +6,7 @@ import {
   FlexSpreadList,
 } from "../components/Helper/HelperComponents";
 import TrashCalendar from "../components/TrashCalendar/TrashCalendar";
-import { GET_DUTIES } from "../data/duties";
+import { GET_DUTIES } from "../data/Duties";
 
 const DutyPage = () => {
   return (
