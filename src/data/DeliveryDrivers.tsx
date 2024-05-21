@@ -27,7 +27,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     image: DervishImage,
     date: new Date("2024-05-11"),
     orderItems: ["1 Steakhouse", "1 Cheeseburger"],
-    rating: 5,
+    rating: 3,
   },
   {
     name: "Nazim",
@@ -41,6 +41,6 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     image: AvtarImage,
     date: new Date("2024-05-15"),
     orderItems: ["6 Cheeseburger"],
-    rating: 5,
+    rating: 4,
   },
 ];
