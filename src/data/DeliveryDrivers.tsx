@@ -7,6 +7,7 @@ export type DeliveryDriver = {
   name: string;
   date: Date;
   orderItems: string[];
+  rating: number;
 };
 
 export const DeliveryDrivers: DeliveryDriver[] = [
@@ -19,23 +20,27 @@ export const DeliveryDrivers: DeliveryDriver[] = [
       "1 Cheeseburger",
       "1 Happymeal",
     ],
+    rating: 2,
   },
   {
     name: "Dervish",
     image: DervishImage,
     date: new Date("2024-05-11"),
     orderItems: ["1 Steakhouse", "1 Cheeseburger"],
+    rating: 5,
   },
   {
     name: "Nazim",
     image: NazimImage,
     date: new Date("2024-05-14"),
     orderItems: ["1 Homestyle Crispy Chicken Honey Mustard", "2 Cheeseburger"],
+    rating: 4,
   },
   {
     name: "Avtar",
     image: AvtarImage,
     date: new Date("2024-05-15"),
     orderItems: ["6 Cheeseburger"],
+    rating: 5,
   },
 ];

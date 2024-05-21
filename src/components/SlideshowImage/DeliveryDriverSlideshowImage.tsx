@@ -8,6 +8,8 @@ import {
   Date,
   OrderTitle,
   ImageContainer,
+  OrderItem,
+  Rating,
 } from "./Components";
 
 const DeliveryDriverSlideshowImage = ({
@@ -15,11 +17,13 @@ const DeliveryDriverSlideshowImage = ({
   name,
   date,
   orderItems,
+  rating,
 }: {
   image: string;
   name: string;
   date: Date;
   orderItems: string[];
+  rating: number;
 }) => {
   const { t, i18n } = useTranslation();
 
@@ -34,12 +38,11 @@ const DeliveryDriverSlideshowImage = ({
           {t("deliveryDrivers.orderedOn")}{" "}
           {date.toLocaleString(i18n.language, dateFormatOptions)}
         </Date>
+        <Rating>{"⭐".repeat(rating)}</Rating>
         <OrderTitle>{t("deliveryDrivers.order")}</OrderTitle>
-        <ul>
-          {orderItems.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
+        {orderItems.map((item) => (
+          <OrderItem>{item}</OrderItem>
+        ))}
       </FactsContainer>
     </Container>
   );

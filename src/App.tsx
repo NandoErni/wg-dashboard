@@ -5,6 +5,7 @@ import { createContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";
 import DeliveryDriverPage from "./pages/DeliveryDriverPage";
+import SettingsPage from "./pages/SettingsPage";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -64,13 +65,11 @@ function App() {
         <h2 onClick={() => changePage(<DeliveryDriverPage />)}>
           {t("burgerMenu.deliveryDriver")}
         </h2>
-        <h2>{t("burgerMenu.lights")}</h2>
+        {/* <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
-        <h2>{t("burgerMenu.calendar")}</h2>
-        <h2>{t("burgerMenu.weather")}</h2>
-        <h2>{t("burgerMenu.bus")}</h2>
-        <h2>{t("burgerMenu.plants")}</h2>
-        <h2>{t("burgerMenu.settings")}</h2>
+        <h2 onClick={() => changePage(<SettingsPage />)}>
+          {t("burgerMenu.settings")}
+        </h2> */}
       </Menu>
       <div className="App" id="outer-container">
         <AppContext.Provider

@@ -15,10 +15,6 @@ export type StringType = {
       dashboard: string;
       lights: string;
       jokeOfTheDay: string;
-      calendar: string;
-      weather: string;
-      bus: string;
-      plants: string;
       settings: string;
       deliveryDriver: string;
     };
