@@ -51,13 +51,13 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     image: SerafinImage,
     date: new Date("2024-05-27"),
     orderItems: ["1 Happy Meal", "2 Big Mac", "McVeggie", "Big Tasty Single"],
-    rating: 1,
+    rating: 4,
   },
   {
     name: "Sarbaz",
     image: SarbazImage,
     date: new Date("2024-05-27"),
     orderItems: ["2 McFlurry M&M's"],
-    rating: 5,
+    rating: 1,
   },
 ];
