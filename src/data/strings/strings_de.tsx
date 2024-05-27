@@ -9,6 +9,7 @@ const STRING_DE: StringType = {
       jokeOfTheDay: "Witz des Tages",
       settings: "Einstellungen",
       deliveryDriver: "Essensfahrer",
+      wifi: "WLAN",
     },
     dutyCard: {
       tasks: "Aufgaben",

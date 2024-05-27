@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import DashboardPage from "./pages/DashboardPage";
 import DeliveryDriverPage from "./pages/DeliveryDriverPage";
 import SettingsPage from "./pages/SettingsPage";
+import WifiPage from "./pages/WifiPage";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -65,6 +66,8 @@ function App() {
         <h2 onClick={() => changePage(<DeliveryDriverPage />)}>
           {t("burgerMenu.deliveryDriver")}
         </h2>
+
+        <h2 onClick={() => changePage(<WifiPage />)}>{t("burgerMenu.wifi")}</h2>
         {/* <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
         <h2 onClick={() => changePage(<SettingsPage />)}>

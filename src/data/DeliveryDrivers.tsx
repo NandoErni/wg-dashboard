@@ -2,6 +2,8 @@ import EduardoImage from "../img/1_eduardo.jpg";
 import DervishImage from "../img/2_dervish.jpg";
 import NazimImage from "../img/3_nazim.jpg";
 import AvtarImage from "../img/4_avtar.jpg";
+import SerafinImage from "../img/5_serafin.jpg";
+
 export type DeliveryDriver = {
   image: string;
   name: string;
@@ -18,7 +20,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     orderItems: [
       "1 Homestyle Crispy Chicken Teriyaki",
       "1 Cheeseburger",
-      "1 Happymeal",
+      "1 Happy Meal",
     ],
     rating: 2,
   },
@@ -42,5 +44,12 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-15"),
     orderItems: ["6 Cheeseburger"],
     rating: 4,
+  },
+  {
+    name: "Serafin",
+    image: SerafinImage,
+    date: new Date("2024-05-27"),
+    orderItems: ["1 Happy Meal", "2 Big Mac", "McVeggie", "Big Tasty Single"],
+    rating: 1,
   },
 ];

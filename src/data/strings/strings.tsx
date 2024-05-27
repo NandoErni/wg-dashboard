@@ -17,6 +17,7 @@ export type StringType = {
       jokeOfTheDay: string;
       settings: string;
       deliveryDriver: string;
+      wifi: string;
     };
     dutyCard: {
       tasks: string;
