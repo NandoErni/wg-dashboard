@@ -3,6 +3,7 @@ import DervishImage from "../img/2_dervish.jpg";
 import NazimImage from "../img/3_nazim.jpg";
 import AvtarImage from "../img/4_avtar.jpg";
 import SerafinImage from "../img/5_serafin.jpg";
+import SarbazImage from "../img/6_sarbaz.jpg";
 
 export type DeliveryDriver = {
   image: string;
@@ -51,5 +52,12 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-27"),
     orderItems: ["1 Happy Meal", "2 Big Mac", "McVeggie", "Big Tasty Single"],
     rating: 1,
+  },
+  {
+    name: "Sarbaz",
+    image: SarbazImage,
+    date: new Date("2024-05-27"),
+    orderItems: ["2 McFlurry M&M's"],
+    rating: 5,
   },
 ];
