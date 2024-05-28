@@ -60,4 +60,11 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     orderItems: ["2 McFlurry M&M's"],
     rating: 1,
   },
+  {
+    name: "Sarbaz",
+    image: SarbazImage,
+    date: new Date("2024-05-28"),
+    orderItems: ["3 Cheesburger", "1 Happy Meal"],
+    rating: 1,
+  },
 ];
