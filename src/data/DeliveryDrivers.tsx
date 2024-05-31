@@ -4,6 +4,7 @@ import NazimImage from "../img/3_nazim.jpg";
 import AvtarImage from "../img/4_avtar.jpg";
 import SerafinImage from "../img/5_serafin.jpg";
 import SarbazImage from "../img/6_sarbaz.jpg";
+import JennifferImage from "../img/7_jenniffer.jpg";
 
 export type DeliveryDriver = {
   image: string;
@@ -66,5 +67,12 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-28"),
     orderItems: ["3 Cheesburger", "1 Happy Meal"],
     rating: 1,
+  },
+  {
+    name: "Jenniffer",
+    image: JennifferImage,
+    date: new Date("2024-05-31"),
+    orderItems: ["2 Pita Gyros"],
+    rating: 3,
   },
 ];
