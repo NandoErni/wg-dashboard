@@ -5,6 +5,8 @@ import AvtarImage from "../img/4_avtar.jpg";
 import SerafinImage from "../img/5_serafin.jpg";
 import SarbazImage from "../img/6_sarbaz.jpg";
 import JennifferImage from "../img/7_jenniffer.jpg";
+import RomulusImage from "../img/8_romulus.jpg";
+import IsmetImage from "../img/9_ismet.jpg";
 
 export type DeliveryDriver = {
   image: string;
@@ -72,7 +74,21 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     name: "Jenniffer",
     image: JennifferImage,
     date: new Date("2024-05-31"),
-    orderItems: ["2 Pita Gyros"],
+    orderItems: ["2 Pita Gyros (Hähnchen)"],
+    rating: 3,
+  },
+  {
+    name: "Romulus",
+    image: RomulusImage,
+    date: new Date("2024-06-2"),
+    orderItems: ["2 Pita Gyros (Hähnchen)"],
+    rating: 2,
+  },
+  {
+    name: "Ismet",
+    image: IsmetImage,
+    date: new Date("2024-06-2"),
+    orderItems: ["2 Pita Gyros (Halloumi"],
     rating: 3,
   },
 ];
