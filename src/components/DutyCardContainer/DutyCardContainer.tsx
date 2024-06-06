@@ -16,8 +16,8 @@ const DutyCardContainer = (props: { getDuties: GetDuties }) => {
   };
 
   const nextChangeDate = useRecurringDate(
-    new Date(2024, 2, 25),
-    14,
+    new Date(2024, 2, 11),
+    30,
     rotateList
   );
 

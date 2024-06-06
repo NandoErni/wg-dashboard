@@ -28,7 +28,6 @@ export const GET_DUTIES: GetDuties = (t) => {
       generalTasks: [
         t("duties.bathroom.generalTasks.bathroom"),
         t("duties.bathroom.generalTasks.trash"),
-        t("duties.bathroom.generalTasks.compost"),
       ],
       detailedTasks: [
         {
@@ -65,7 +64,6 @@ export const GET_DUTIES: GetDuties = (t) => {
       generalTasks: [
         t("duties.floor.generalTasks.livingRoom"),
         t("duties.floor.generalTasks.floor"),
-        t("duties.floor.generalTasks.plants"),
         t("duties.floor.generalTasks.glasAndCans"),
       ],
       detailedTasks: [
