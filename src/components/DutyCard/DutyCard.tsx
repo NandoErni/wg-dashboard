@@ -32,6 +32,7 @@ const customStyles = {
 const DutyCard = (props: DutyCardProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
   Modal.setAppElement("#root");
+
   function openModal() {
     setIsOpen(true);
   }
@@ -59,7 +60,11 @@ const DutyCard = (props: DutyCardProps) => {
         contentLabel="modal"
         closeTimeoutMS={500}
       >
-        <DutyModal closeModal={closeModal} duty={props.duty} />
+        <DutyModal
+          closeModal={closeModal}
+          duty={props.duty}
+          hasDetails={props.name !== "Lauro"}
+        />
       </Modal>
     </>
   );

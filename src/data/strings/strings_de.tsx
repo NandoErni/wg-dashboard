@@ -10,6 +10,7 @@ const STRING_DE: StringType = {
       settings: "Einstellungen",
       deliveryDriver: "Essensfahrer",
       wifi: "WLAN",
+      mfw: "Winterthurer Musikfestwochen",
     },
     dutyCard: {
       tasks: "Aufgaben",
@@ -31,7 +32,6 @@ const STRING_DE: StringType = {
         generalTasks: {
           bathroom: "Bad",
           trash: "Kehricht",
-          compost: "Kompost",
         },
         detailedTasks: {
           cleanToilet: "WC putzen",
@@ -48,7 +48,6 @@ const STRING_DE: StringType = {
         generalTasks: {
           livingRoom: "Wohnzimmer",
           floor: "Boden",
-          plants: "Pflanzen",
           glasAndCans: "Glas & Dosen",
         },
         detailedTasks: {

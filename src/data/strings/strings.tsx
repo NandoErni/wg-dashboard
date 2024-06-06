@@ -18,6 +18,7 @@ export type StringType = {
       settings: string;
       deliveryDriver: string;
       wifi: string;
+      mfw: string;
     };
     dutyCard: {
       tasks: string;
