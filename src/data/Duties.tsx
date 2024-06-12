@@ -50,10 +50,7 @@ export const GET_DUTIES: GetDuties = (t) => {
           task: t("duties.bathroom.detailedTasks.disposeTrash"),
           frequencyInWeeks: 1,
         },
-        {
-          task: t("duties.bathroom.detailedTasks.disposeCompost"),
-          frequencyInWeeks: 1,
-        },
+  
       ],
     },
 
@@ -82,10 +79,6 @@ export const GET_DUTIES: GetDuties = (t) => {
         },
         {
           task: t("duties.floor.detailedTasks.disposeGlasAndCans"),
-          frequencyInWeeks: 1,
-        },
-        {
-          task: t("duties.floor.detailedTasks.waterPlants"),
           frequencyInWeeks: 1,
         },
       ],
