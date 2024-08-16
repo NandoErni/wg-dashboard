@@ -7,6 +7,10 @@ import SarbazImage from "../img/6_sarbaz.jpg";
 import JennifferImage from "../img/7_jenniffer.jpg";
 import RomulusImage from "../img/8_romulus.jpg";
 import IsmetImage from "../img/9_ismet.jpg";
+import ApostolosImage from "../img/10_apostolos.jpg";
+import MoktarImage from "../img/11_moktar.jpg";
+import AbdulSamadImage from "../img/12_abdulsamad.jpg";
+import VladoMadarImage from "../img/13_vladomadar.jpg";
 
 export type DeliveryDriver = {
   image: string;
@@ -88,7 +92,57 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     name: "Ismet",
     image: IsmetImage,
     date: new Date("2024-06-2"),
-    orderItems: ["2 Pita Gyros (Halloumi"],
+    orderItems: ["2 Pita Gyros (Halloumi)"],
     rating: 3,
+  },
+  {
+    name: "Vlado Madar",
+    image: VladoMadarImage,
+    date: new Date("2024-06-12"),
+    orderItems: ["1 Fenster Ausmessung"],
+    rating: 3,
+  },
+  {
+    name: "Avtar",
+    image: AvtarImage,
+    date: new Date("2024-06-17"),
+    orderItems: [
+      "2 BK KING Fries Large Size",
+      "2 Whopper",
+      "2 Chili Cheese Nuggets (9 Stück)",
+    ],
+    rating: 1,
+  },
+  {
+    name: "Apostolos",
+    image: ApostolosImage,
+    date: new Date("2024-06-20"),
+    orderItems: ["6 Whopper"],
+    rating: 4,
+  },
+  {
+    name: "Avtar",
+    image: AvtarImage,
+    date: new Date("2024-06-25"),
+    orderItems: [
+      "2 VK Nuggets(9 Stück)",
+      "1 King Fusion OREO",
+      "1 Dreamy Caramel Sundae",
+    ],
+    rating: 1,
+  },
+  {
+    name: "Moktar",
+    image: MoktarImage,
+    date: new Date("2024-08-04"),
+    orderItems: ["2 Meisterwerk", "2 Goldfritten"],
+    rating: 4,
+  },
+  {
+    name: "Abdul Samad",
+    image: AbdulSamadImage,
+    date: new Date("2024-08-04"),
+    orderItems: ["1 Whopper", "3 Cheeseburger"],
+    rating: 2,
   },
 ];
