@@ -21,6 +21,7 @@ const DeliveryDriverSlideshowImage = ({
   date,
   orderItems,
   rating,
+  review,
 }: {
   image: string;
   companyImage: string;
@@ -28,6 +29,7 @@ const DeliveryDriverSlideshowImage = ({
   date: Date;
   orderItems: string[];
   rating: number;
+  review: string;
 }) => {
   const { t, i18n } = useTranslation();
 
@@ -44,7 +46,7 @@ const DeliveryDriverSlideshowImage = ({
           {date.toLocaleString(i18n.language, dateFormatOptions)}
         </Date>
         <Rating>{"⭐".repeat(rating)}</Rating>
-        <Review>Hello</Review>
+        <Review>{review}</Review>
         <OrderTitle>{t("deliveryDrivers.order")}</OrderTitle>
         {orderItems.map((item) => (
           <OrderItem>{item}</OrderItem>

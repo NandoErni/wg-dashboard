@@ -25,6 +25,7 @@ const DeliveryDriverPage = () => {
             date={driver.date}
             orderItems={driver.orderItems}
             rating={driver.rating}
+            review={driver.review}
             key={index}
           />
         ))}

@@ -25,6 +25,7 @@ export type DeliveryDriver = {
   date: Date;
   orderItems: string[];
   rating: number;
+  review: string;
 };
 
 export const DeliveryDrivers: DeliveryDriver[] = [
@@ -39,6 +40,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
       "1 Happy Meal",
     ],
     rating: 2,
+    review: "Het sich verfahre",
   },
   {
     name: "Dervish",
@@ -47,6 +49,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-11"),
     orderItems: ["1 Steakhouse", "1 Cheeseburger"],
     rating: 3,
+    review: "Steakhouse isch nöd so guet gsi",
   },
   {
     name: "Nazim",
@@ -55,6 +58,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-14"),
     orderItems: ["1 Homestyle Crispy Chicken Honey Mustard", "2 Cheeseburger"],
     rating: 4,
+    review: "Gueti Burger gsi",
   },
   {
     name: "Avtar",
@@ -63,6 +67,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-15"),
     orderItems: ["6 Cheeseburger"],
     rating: 4,
+    review: "Schnell und cheesy",
   },
   {
     name: "Serafin",
@@ -71,6 +76,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-27"),
     orderItems: ["1 Happy Meal", "2 Big Mac", "McVeggie", "Big Tasty Single"],
     rating: 4,
+    review: "Wow..",
   },
   {
     name: "Sarbaz",
@@ -79,6 +85,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-27"),
     orderItems: ["2 McFlurry M&M's"],
     rating: 1,
+    review: "Lang bruucht + zwei mol verfahre",
   },
   {
     name: "Sarbaz",
@@ -87,6 +94,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-28"),
     orderItems: ["3 Cheesburger", "1 Happy Meal"],
     rating: 1,
+    review: "Wieder verfahre",
   },
   {
     name: "Jenniffer",
@@ -95,6 +103,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-05-31"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 3,
+    review: "Ganz okay",
   },
   {
     name: "Romulus",
@@ -103,6 +112,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 2,
+    review: "het chli länger brucht",
   },
   {
     name: "Ismet",
@@ -111,6 +121,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Halloumi)"],
     rating: 3,
+    review: "Joa",
   },
   {
     name: "Vlado Madar",
@@ -118,7 +129,9 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     companyImage: HappyFenster,
     date: new Date("2024-06-12"),
     orderItems: ["1 Fenster Ausmessung"],
-    rating: 3,
+    rating: 2,
+    review:
+      "Het sich verspötet und isch recht lang gange bis es zumne Termin cho isch",
   },
   {
     name: "Avtar",
@@ -131,6 +144,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
       "2 Chili Cheese Nuggets (9 Stück)",
     ],
     rating: 1,
+    review: "Chili Cheese Nuggets sind nöd guet",
   },
   {
     name: "Apostolos",
@@ -139,6 +153,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-06-20"),
     orderItems: ["6 Whopper"],
     rating: 4,
+    review: "Top",
   },
   {
     name: "Avtar",
@@ -151,6 +166,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
       "1 Dreamy Caramel Sundae",
     ],
     rating: 1,
+    review: "Glace Maschine isch kaputt gsi und als Ersatz hends es Cola geh.",
   },
   {
     name: "Moktar",
@@ -159,6 +175,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-08-04"),
     orderItems: ["2 Meisterwerk", "2 Goldfritten"],
     rating: 4,
+    review: "Top",
   },
   {
     name: "Abdul Samad",
@@ -167,5 +184,6 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     date: new Date("2024-08-04"),
     orderItems: ["1 Whopper", "3 Cheeseburger"],
     rating: 2,
+    review: "Cheesburger sind schlechter als McDonald's",
   },
 ];
