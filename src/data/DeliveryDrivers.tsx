@@ -1,16 +1,16 @@
-import EduardoImage from "../img/1_eduardo.jpg";
-import DervishImage from "../img/2_dervish.jpg";
-import NazimImage from "../img/3_nazim.jpg";
-import AvtarImage from "../img/4_avtar.jpg";
-import SerafinImage from "../img/5_serafin.jpg";
-import SarbazImage from "../img/6_sarbaz.jpg";
-import JennifferImage from "../img/7_jenniffer.jpg";
-import RomulusImage from "../img/8_romulus.jpg";
-import IsmetImage from "../img/9_ismet.jpg";
-import ApostolosImage from "../img/10_apostolos.jpg";
-import MoktarImage from "../img/11_moktar.jpg";
-import AbdulSamadImage from "../img/12_abdulsamad.jpg";
-import VladoMadarImage from "../img/13_vladomadar.jpg";
+import EduardoImage from "../img/driver/1_eduardo.jpg";
+import DervishImage from "../img/driver/2_dervish.jpg";
+import NazimImage from "../img/driver/3_nazim.jpg";
+import AvtarImage from "../img/driver/4_avtar.jpg";
+import SerafinImage from "../img/driver/5_serafin.jpg";
+import SarbazImage from "../img/driver/6_sarbaz.jpg";
+import JennifferImage from "../img/driver/7_jenniffer.jpg";
+import RomulusImage from "../img/driver/8_romulus.jpg";
+import IsmetImage from "../img/driver/9_ismet.jpg";
+import ApostolosImage from "../img/driver/10_apostolos.jpg";
+import MoktarImage from "../img/driver/11_moktar.jpg";
+import AbdulSamadImage from "../img/driver/12_abdulsamad.jpg";
+import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
 
 export type DeliveryDriver = {
   image: string;
