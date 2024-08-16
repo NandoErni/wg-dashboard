@@ -1,4 +1,4 @@
-import { Fade } from "react-slideshow-image";
+import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { FlexSpreadList } from "../components/Helper/HelperComponents";
 import DeliveryDriverSlideshowImage from "../components/SlideshowImage/DeliveryDriverSlideshowImage";
@@ -16,7 +16,7 @@ const DeliveryDriverPage = () => {
   };
   return (
     <FlexSpreadList>
-      <Fade {...fadeProperties}>
+      <Slide {...fadeProperties}>
         {DeliveryDrivers.map((driver, index) => (
           <DeliveryDriverSlideshowImage
             image={driver.image}
@@ -27,7 +27,7 @@ const DeliveryDriverPage = () => {
             key={index}
           />
         ))}
-      </Fade>
+      </Slide>
     </FlexSpreadList>
   );
 };
