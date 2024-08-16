@@ -12,8 +12,12 @@ import MoktarImage from "../img/driver/11_moktar.jpg";
 import AbdulSamadImage from "../img/driver/12_abdulsamad.jpg";
 import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
 
+import McDonalds from "../img/logos/mcdonald.png";
+import BurgerKing from "../img/logos/burgerking.png";
+
 export type DeliveryDriver = {
   image: string;
+  companyImage: string;
   name: string;
   date: Date;
   orderItems: string[];
@@ -24,6 +28,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Eduardo",
     image: EduardoImage,
+    companyImage: McDonalds,
     date: new Date("2024-04-16"),
     orderItems: [
       "1 Homestyle Crispy Chicken Teriyaki",
@@ -35,6 +40,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Dervish",
     image: DervishImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-11"),
     orderItems: ["1 Steakhouse", "1 Cheeseburger"],
     rating: 3,
@@ -42,6 +48,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Nazim",
     image: NazimImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-14"),
     orderItems: ["1 Homestyle Crispy Chicken Honey Mustard", "2 Cheeseburger"],
     rating: 4,
@@ -49,6 +56,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Avtar",
     image: AvtarImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-15"),
     orderItems: ["6 Cheeseburger"],
     rating: 4,
@@ -56,6 +64,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Serafin",
     image: SerafinImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-27"),
     orderItems: ["1 Happy Meal", "2 Big Mac", "McVeggie", "Big Tasty Single"],
     rating: 4,
@@ -63,6 +72,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Sarbaz",
     image: SarbazImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-27"),
     orderItems: ["2 McFlurry M&M's"],
     rating: 1,
@@ -70,6 +80,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Sarbaz",
     image: SarbazImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-28"),
     orderItems: ["3 Cheesburger", "1 Happy Meal"],
     rating: 1,
@@ -77,6 +88,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Jenniffer",
     image: JennifferImage,
+    companyImage: McDonalds,
     date: new Date("2024-05-31"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 3,
@@ -84,6 +96,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Romulus",
     image: RomulusImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 2,
@@ -91,6 +104,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Ismet",
     image: IsmetImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Halloumi)"],
     rating: 3,
@@ -98,6 +112,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Vlado Madar",
     image: VladoMadarImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-12"),
     orderItems: ["1 Fenster Ausmessung"],
     rating: 3,
@@ -105,6 +120,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Avtar",
     image: AvtarImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-17"),
     orderItems: [
       "2 BK KING Fries Large Size",
@@ -116,6 +132,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Apostolos",
     image: ApostolosImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-20"),
     orderItems: ["6 Whopper"],
     rating: 4,
@@ -123,6 +140,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Avtar",
     image: AvtarImage,
+    companyImage: McDonalds,
     date: new Date("2024-06-25"),
     orderItems: [
       "2 VK Nuggets(9 Stück)",
@@ -134,6 +152,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Moktar",
     image: MoktarImage,
+    companyImage: McDonalds,
     date: new Date("2024-08-04"),
     orderItems: ["2 Meisterwerk", "2 Goldfritten"],
     rating: 4,
@@ -141,6 +160,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Abdul Samad",
     image: AbdulSamadImage,
+    companyImage: McDonalds,
     date: new Date("2024-08-04"),
     orderItems: ["1 Whopper", "3 Cheeseburger"],
     rating: 2,

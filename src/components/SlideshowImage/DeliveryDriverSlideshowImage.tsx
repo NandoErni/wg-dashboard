@@ -3,6 +3,7 @@ import { dateFormatOptions } from "../../hooks/useRecurringDate";
 import {
   Container,
   Image,
+  LogoImage,
   Name,
   FactsContainer,
   Date,
@@ -14,12 +15,14 @@ import {
 
 const DeliveryDriverSlideshowImage = ({
   image,
+  companyImage,
   name,
   date,
   orderItems,
   rating,
 }: {
   image: string;
+  companyImage: string;
   name: string;
   date: Date;
   orderItems: string[];
@@ -31,6 +34,7 @@ const DeliveryDriverSlideshowImage = ({
     <Container>
       <ImageContainer>
         <Image src={image} />
+        <LogoImage src={companyImage} />
       </ImageContainer>
       <FactsContainer>
         <Name>{name}</Name>

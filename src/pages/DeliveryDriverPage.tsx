@@ -20,6 +20,7 @@ const DeliveryDriverPage = () => {
         {DeliveryDrivers.map((driver, index) => (
           <DeliveryDriverSlideshowImage
             image={driver.image}
+            companyImage={driver.companyImage}
             name={driver.name}
             date={driver.date}
             orderItems={driver.orderItems}

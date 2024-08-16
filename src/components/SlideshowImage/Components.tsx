@@ -17,6 +17,14 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   max-height: 100%;
   max-width: 100%;
+  position: absolute;
+`;
+
+export const LogoImage = styled.img`
+  max-height: 25%;
+  max-width: 25%;
+  position: absolute;
+  margin: 10px;
 `;
 
 export const Name = styled.div`
