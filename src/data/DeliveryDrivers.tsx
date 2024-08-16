@@ -14,6 +14,9 @@ import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
 
 import McDonalds from "../img/logos/mcdonald.png";
 import BurgerKing from "../img/logos/burgerking.png";
+import OhMyGreek from "../img/logos/ohmygreek.svg";
+import HappyFenster from "../img/logos/happyfenster.png";
+import HolyCow from "../img/logos/holycow.png";
 
 export type DeliveryDriver = {
   image: string;
@@ -88,7 +91,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Jenniffer",
     image: JennifferImage,
-    companyImage: McDonalds,
+    companyImage: OhMyGreek,
     date: new Date("2024-05-31"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 3,
@@ -96,7 +99,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Romulus",
     image: RomulusImage,
-    companyImage: McDonalds,
+    companyImage: OhMyGreek,
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Hähnchen)"],
     rating: 2,
@@ -104,7 +107,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Ismet",
     image: IsmetImage,
-    companyImage: McDonalds,
+    companyImage: OhMyGreek,
     date: new Date("2024-06-2"),
     orderItems: ["2 Pita Gyros (Halloumi)"],
     rating: 3,
@@ -112,7 +115,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Vlado Madar",
     image: VladoMadarImage,
-    companyImage: McDonalds,
+    companyImage: HappyFenster,
     date: new Date("2024-06-12"),
     orderItems: ["1 Fenster Ausmessung"],
     rating: 3,
@@ -120,7 +123,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Avtar",
     image: AvtarImage,
-    companyImage: McDonalds,
+    companyImage: BurgerKing,
     date: new Date("2024-06-17"),
     orderItems: [
       "2 BK KING Fries Large Size",
@@ -132,7 +135,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Apostolos",
     image: ApostolosImage,
-    companyImage: McDonalds,
+    companyImage: BurgerKing,
     date: new Date("2024-06-20"),
     orderItems: ["6 Whopper"],
     rating: 4,
@@ -140,7 +143,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Avtar",
     image: AvtarImage,
-    companyImage: McDonalds,
+    companyImage: BurgerKing,
     date: new Date("2024-06-25"),
     orderItems: [
       "2 VK Nuggets(9 Stück)",
@@ -152,7 +155,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Moktar",
     image: MoktarImage,
-    companyImage: McDonalds,
+    companyImage: HolyCow,
     date: new Date("2024-08-04"),
     orderItems: ["2 Meisterwerk", "2 Goldfritten"],
     rating: 4,
@@ -160,7 +163,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
   {
     name: "Abdul Samad",
     image: AbdulSamadImage,
-    companyImage: McDonalds,
+    companyImage: BurgerKing,
     date: new Date("2024-08-04"),
     orderItems: ["1 Whopper", "3 Cheeseburger"],
     rating: 2,
