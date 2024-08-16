@@ -7,6 +7,7 @@ import {
   Name,
   FactsContainer,
   Date,
+  Review,
   OrderTitle,
   ImageContainer,
   OrderItem,
@@ -43,6 +44,7 @@ const DeliveryDriverSlideshowImage = ({
           {date.toLocaleString(i18n.language, dateFormatOptions)}
         </Date>
         <Rating>{"⭐".repeat(rating)}</Rating>
+        <Review>Hello</Review>
         <OrderTitle>{t("deliveryDrivers.order")}</OrderTitle>
         {orderItems.map((item) => (
           <OrderItem>{item}</OrderItem>

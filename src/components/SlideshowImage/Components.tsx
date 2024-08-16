@@ -38,14 +38,21 @@ export const Name = styled.div`
 
 export const FactsContainer = styled.div`
   width: 50%;
-  padding: 50px;
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-self: flex-start;
 `;
 
 export const Date = styled.div`
   text-align: center;
+`;
+
+export const Review = styled.div`
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: auto;
 `;
 
 export const OrderTitle = styled.div`
@@ -63,5 +70,4 @@ export const OrderItem = styled.div`
 export const Rating = styled.div`
   font-size: 3em;
   text-align: center;
-  margin-bottom: 100px;
 `;
