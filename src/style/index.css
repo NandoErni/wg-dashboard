@@ -1,6 +1,7 @@
 html {
   height: 100%;
   user-select: none;
+  overscroll-behavior-x: none;
 }
 body {
   margin: 0;
@@ -9,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: rgb(152, 102, 102);
 }
 @media (min-width: 1000px) {
   body {
