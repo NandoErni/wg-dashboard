@@ -10,7 +10,6 @@ const STRING_DE: StringType = {
       settings: "Einstellungen",
       deliveryDriver: "Essensfahrer",
       wifi: "WLAN",
-      mfw: "Winterthurer Musikfestwochen",
     },
     dutyCard: {
       tasks: "Aufgaben",

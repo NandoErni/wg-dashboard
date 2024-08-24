@@ -7,7 +7,6 @@ import DashboardPage from "./pages/DashboardPage";
 import DeliveryDriverPage from "./pages/DeliveryDriverPage";
 import SettingsPage from "./pages/SettingsPage";
 import WifiPage from "./pages/WifiPage";
-import MFWPage from "./pages/MFWPage";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -69,7 +68,6 @@ function App() {
         </h2>
 
         <h2 onClick={() => changePage(<WifiPage />)}>{t("burgerMenu.wifi")}</h2>
-        <h2 onClick={() => changePage(<MFWPage />)}>{t("burgerMenu.mfw")}</h2>
         {/* <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
         <h2 onClick={() => changePage(<SettingsPage />)}>
