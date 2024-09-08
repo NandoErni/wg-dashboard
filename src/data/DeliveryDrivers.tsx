@@ -186,4 +186,17 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     rating: 2,
     review: "Cheesburger sind schlechter als McDonald's",
   },
+  {
+    name: "Abdul Samad",
+    image: AbdulSamadImage,
+    companyImage: BurgerKing,
+    date: new Date("2024-08-04"),
+    orderItems: [
+      "1 Big King Menu",
+      "1 Flame Steakhouse",
+      "1 BK Nuggets (6 Stück)",
+    ],
+    rating: 1,
+    review: "Het mit de Bstellig no chli bim Archhöfe chillt",
+  },
 ];
