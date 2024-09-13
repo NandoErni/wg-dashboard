@@ -26,18 +26,23 @@ const useRecurringDate = (
 
   useEffect(() => {
     updateNewDate(currentDatetimeHourlyState);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentDatetimeHourlyState]);
 
+  useEffect(() => {
+    updateNewDate(new Date());
+  }, []);
+
   const updateNewDate = (currentDate: Date) => {
-    if (nextDate < currentDate) {
-      let newDate = new Date(nextDate);
+    let newDate = new Date(nextDate);
+    while (newDate < currentDate) {
+      newDate = new Date(newDate);
       newDate.setDate(newDate.getDate() + intervalInDays);
-      setNextDate(newDate);
-      changeDateListener(newDate);
     }
+    setNextDate(newDate);
+    changeDateListener(newDate);
   };
-  updateNewDate(new Date());
 
   return nextDate;
 };

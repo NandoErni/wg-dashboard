@@ -18,9 +18,7 @@ const BusClock = () => {
   useEffect(() => {
     if (minutesTillNextBus == 0) {
       newMin();
-      console.log("new time!");
     }
-    console.log(minutesTillNextBus);
   }, [minutesTillNextBus]);
 
   useEffect(() => {
@@ -38,9 +36,6 @@ const BusClock = () => {
     );
     setMaxMinutesTillNextBus(secondsBetween);
     setMinutesTillNextBus(secondsBetween);
-    console.log(Math.round(minutesTillNextBus / 60));
-    console.log(minutesTillNextBus);
-    console.log(secondsBetween);
   };
 
   return (
