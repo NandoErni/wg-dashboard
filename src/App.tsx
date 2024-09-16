@@ -70,8 +70,12 @@ function App() {
         </h2>
 
         <h2 onClick={() => changePage(<WifiPage />)}>{t("burgerMenu.wifi")}</h2>
-        <h2 onClick={() => changePage(<CameraPage />)}>{"Camera"}</h2>
-        <h2 onClick={() => changePage(<ImagesOfCameraPage />)}>{"Images"}</h2>
+        <h2 onClick={() => changePage(<CameraPage />)}>
+          {t("burgerMenu.camera")}
+        </h2>
+        <h2 onClick={() => changePage(<ImagesOfCameraPage />)}>
+          {t("burgerMenu.images")}
+        </h2>
         {/* <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
         <h2 onClick={() => changePage(<SettingsPage />)}>

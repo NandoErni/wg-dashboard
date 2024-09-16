@@ -10,6 +10,8 @@ const STRING_DE: StringType = {
       settings: "Einstellungen",
       deliveryDriver: "Essensfahrer",
       wifi: "WLAN",
+      camera: "Kamera",
+      images: "Bilder",
     },
     dutyCard: {
       tasks: "Aufgaben",
@@ -111,6 +113,10 @@ const STRING_DE: StringType = {
     deliveryDrivers: {
       orderedOn: "Bestellt am",
       order: "Bestellung:",
+    },
+    camera: {
+      done: "Fertig!",
+      imagePreviewInfoText: "Das Bild kann man auf der Bilderseite sehen",
     },
   },
 };

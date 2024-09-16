@@ -18,6 +18,8 @@ export type StringType = {
       settings: string;
       deliveryDriver: string;
       wifi: string;
+      camera: string;
+      images: string;
     };
     dutyCard: {
       tasks: string;
@@ -71,6 +73,10 @@ export type StringType = {
     deliveryDrivers: {
       orderedOn: string;
       order: string;
+    };
+    camera: {
+      done: string;
+      imagePreviewInfoText: string;
     };
   };
 };

@@ -16,11 +16,13 @@ import {
 } from "../components/Webcam/Components";
 import { useRef, useState } from "react";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { useTranslation } from "react-i18next";
 
 const COUNTDOWN_TIMER = 5;
 const PREVIEW_TIMER = 1000;
 
 const CameraPage = () => {
+  const { t } = useTranslation();
   const webcamRef = useRef<any>(null);
   const [imgSrc, setImgSrc] = useState<any>(null);
   const [countdown, setCountdown] = useState(-1);
@@ -74,7 +76,7 @@ const CameraPage = () => {
           <DoneModalBody>
             <DoneModalHeader>
               <div />
-              <DoneModalTitle>Done!</DoneModalTitle>
+              <DoneModalTitle>{t("camera.done")}</DoneModalTitle>
               <DoneModalProgressbarContainer>
                 <CircularProgressbar
                   maxValue={PREVIEW_TIMER}
@@ -90,7 +92,7 @@ const CameraPage = () => {
             </DoneModalHeader>
             <DoneModalImagePreview src={imgSrc} />
             <DoneModalGoToImages>
-              This image can be viewed on the Image page
+              {t("camera.imagePreviewInfoText")}
             </DoneModalGoToImages>
           </DoneModalBody>
         </DoneModal>
