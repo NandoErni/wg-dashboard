@@ -1,7 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import { FlexSpreadList } from "../components/Helper/HelperComponents";
 import { Image, ImageContainer } from "../components/Webcam/Components";
-
 const ImagesOfCameraPage = () => {
   const items = Object.entries({ ...localStorage });
 

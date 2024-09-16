@@ -4,8 +4,8 @@ export const WebcamContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 99vh;
 
   > video {
     height: 100%;
@@ -68,13 +68,15 @@ export const Countdown = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 80vw;
+  max-height: 80vh;
   margin: auto;
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  max-height: 100vh;
 `;
 
 export const DoneModal = styled.div`
