@@ -76,3 +76,51 @@ export const Image = styled.img`
 export const ImageContainer = styled.div`
   display: flex;
 `;
+
+export const DoneModal = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000a0;
+  display: flex;
+`;
+
+export const DoneModalBody = styled.div`
+  background-color: #1a5e79;
+  min-height: 80%;
+  min-width: 80%;
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const DoneModalTitle = styled.h1`
+  margin: auto;
+`;
+
+export const DoneModalImagePreview = styled.img`
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+`;
+export const DoneModalGoToImages = styled.div`
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px;
+`;
+
+export const DoneModalProgressbarContainer = styled.div`
+  max-width: 70px;
+`;
+
+export const DoneModalHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+`;
