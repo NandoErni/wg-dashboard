@@ -190,7 +190,7 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     name: "Abdul Samad",
     image: AbdulSamadImage,
     companyImage: BurgerKing,
-    date: new Date("2024-08-04"),
+    date: new Date("2024-09-07"),
     orderItems: [
       "1 Big King Menu",
       "1 Flame Steakhouse",
@@ -198,5 +198,19 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     ],
     rating: 1,
     review: "Het mit de Bstellig no chli bim Archhöfe chillt",
+  },
+  {
+    name: "Apostolos",
+    image: ApostolosImage,
+    companyImage: BurgerKing,
+    date: new Date("2024-09-13"),
+    orderItems: [
+      "1 The Classic Appenzeller Menu",
+      "2 Whopper",
+      "1 The classic Appenzeller",
+      "1 Chili Cheese Dip",
+    ],
+    rating: 2,
+    review: "Burger sind geil gsi, isch schnell cho aber de Dip het gfehlt.",
   },
 ];

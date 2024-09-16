@@ -7,6 +7,8 @@ import DashboardPage from "./pages/DashboardPage";
 import DeliveryDriverPage from "./pages/DeliveryDriverPage";
 import SettingsPage from "./pages/SettingsPage";
 import WifiPage from "./pages/WifiPage";
+import CameraPage from "./pages/CameraPage";
+import ImagesOfCameraPage from "./pages/ImagesOfCameraPage";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -68,6 +70,8 @@ function App() {
         </h2>
 
         <h2 onClick={() => changePage(<WifiPage />)}>{t("burgerMenu.wifi")}</h2>
+        <h2 onClick={() => changePage(<CameraPage />)}>{"Camera"}</h2>
+        <h2 onClick={() => changePage(<ImagesOfCameraPage />)}>{"Images"}</h2>
         {/* <h2>{t("burgerMenu.lights")}</h2>
         <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
         <h2 onClick={() => changePage(<SettingsPage />)}>
