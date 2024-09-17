@@ -3,9 +3,6 @@ import { BUS_TIMES_WEEKDAYS } from "./BusTimesWeekdays";
 export const getNextBusTime = (): Date => {
   const now = new Date();
 
-  const hour = now.getHours();
-  let minute = now.getMinutes();
-
   const currentBusTimes = BUS_TIMES.mondayToFriday;
 
   let bushour = currentBusTimes[0];

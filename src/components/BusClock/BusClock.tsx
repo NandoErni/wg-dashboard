@@ -2,7 +2,6 @@ import { faBus } from "@fortawesome/free-solid-svg-icons";
 
 import "react-circular-progressbar/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useTranslation } from "react-i18next";
 import { Container, ProgressbarContainer } from "./Components";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { getNextBusTime } from "../../data/BusTimes";
@@ -10,13 +9,12 @@ import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../App";
 
 const BusClock = () => {
-  const { t, i18n } = useTranslation();
   const { currentDatetimeState } = useContext(AppContext);
   const [minutesTillNextBus, setMinutesTillNextBus] = useState(95);
   const [maxMinutesTillNextBus, setMaxMinutesTillNextBus] = useState(0);
 
   useEffect(() => {
-    if (minutesTillNextBus == 0) {
+    if (minutesTillNextBus <= 0) {
       newMin();
     }
   }, [minutesTillNextBus]);

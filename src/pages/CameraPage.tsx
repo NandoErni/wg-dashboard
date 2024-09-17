@@ -17,6 +17,7 @@ import {
 import { useRef, useState } from "react";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { useTranslation } from "react-i18next";
+import { AddImage } from "../data/FirebaseConnection";
 
 const COUNTDOWN_TIMER = 5;
 const PREVIEW_TIMER = 1000;
@@ -41,6 +42,7 @@ const CameraPage = () => {
       setImgSrc(imageSrc);
       console.log(imageSrc);
       localStorage.setItem(crypto.randomUUID(), imageSrc);
+      AddImage(imageSrc);
       startPreview();
     }, (COUNTDOWN_TIMER + 1) * 1000);
   };
