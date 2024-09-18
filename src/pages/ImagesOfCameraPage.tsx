@@ -7,9 +7,9 @@ const ImagesOfCameraPage = () => {
   const [images, setImages]: any = useState([]);
 
   useEffect(() => {
-    //setImages(Object.entries({ ...localStorage }));
-    console.log({ ...localStorage });
-    GetImages().then((imgs) => setImages(imgs));
+    GetImages().then((imgs) =>
+      setImages(Object.entries({ ...localStorage }).map((entry) => entry[1]))
+    );
   }, []);
 
   const fadeProperties = {
@@ -26,8 +26,8 @@ const ImagesOfCameraPage = () => {
     <FlexSpreadList key={images.length}>
       <Slide {...fadeProperties}>
         {images.map((img: string, i: number) => (
-          <ImageContainer>
-            <Image src={img} key={i} />
+          <ImageContainer key={i}>
+            <Image src={img} />
           </ImageContainer>
         ))}
       </Slide>

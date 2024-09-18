@@ -19,8 +19,8 @@ export const Icon = styled.div`
   width: 50%;
 `;
 
-export const DegreesText = styled.div<{ isHighlighted: boolean }>`
-  font-size: ${(p) => (p.isHighlighted ? 4 : 3)}cqh;
+export const DegreesText = styled.div<{ $isHighlighted: boolean; key: number }>`
+  font-size: ${(p) => (p.$isHighlighted ? 4 : 3)}cqh;
   text-align: center;
   width: 100%;
 `;

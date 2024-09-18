@@ -46,7 +46,7 @@ const WeatherCard = ({
         <ColumnContainer>
           {weather.map((w, index) => (
             <DegreesText
-              isHighlighted={isToday && index === currentWeatherIndex}
+              $isHighlighted={isToday && index === currentWeatherIndex}
               key={index}
             >
               {Math.round(w.temperature * 10) / 10}° C
