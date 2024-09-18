@@ -7,9 +7,7 @@ const ImagesOfCameraPage = () => {
   const [images, setImages]: any = useState([]);
 
   useEffect(() => {
-    GetImages().then((imgs) =>
-      setImages(Object.entries({ ...localStorage }).map((entry) => entry[1]))
-    );
+    GetImages().then((imgs) => setImages(imgs));
   }, []);
 
   const fadeProperties = {
