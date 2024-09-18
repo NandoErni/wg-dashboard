@@ -21,21 +21,12 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export const handleGoogleSignInIfNeeded = async () => {
-  console.log("wtf");
   if (auth.currentUser) {
-    console.log(auth.currentUser);
     return;
   }
   const provider = new GoogleAuthProvider();
-  try {
-    const result = await signInWithPopup(auth, provider);
-    const user = result.user;
-    // Handle successful sign-in
-  } catch (error) {
-    // Handle sign-in errors
-    console.log(error);
-  }
+  await signInWithPopup(auth, provider);
 };
 
 // It will be imported into your react app whenever it is needed
-export const db = getFirestore(app);
+export const db: any = getFirestore(app);

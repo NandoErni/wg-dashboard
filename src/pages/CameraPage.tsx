@@ -41,7 +41,6 @@ const CameraPage = () => {
       const imageSrc = webcamRef.current.getScreenshot();
       setImgSrc(imageSrc);
       console.log(imageSrc);
-      localStorage.setItem(crypto.randomUUID(), imageSrc);
       AddImage(imageSrc);
       startPreview();
     }, (COUNTDOWN_TIMER + 1) * 1000);

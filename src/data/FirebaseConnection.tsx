@@ -1,4 +1,10 @@
-import { collection, addDoc, Timestamp } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  Timestamp,
+  doc,
+  getDocs,
+} from "firebase/firestore";
 import { db, handleGoogleSignInIfNeeded } from "./Firestore";
 
 export const AddImage = async (imageData: any) => {
@@ -11,5 +17,17 @@ export const AddImage = async (imageData: any) => {
     console.log("Document written with ID: ", docRef.id);
   } catch (e) {
     console.error("Error adding document: ", e);
+  }
+};
+
+export const GetImages = async () => {
+  try {
+    await handleGoogleSignInIfNeeded();
+    const docRef: any = collection(db, "PhotoBoothImages");
+    const snapshot = await getDocs(docRef);
+
+    return snapshot.docs.map((doc: any) => doc.data().image);
+  } catch (e) {
+    console.error("Error getting document: ", e);
   }
 };
