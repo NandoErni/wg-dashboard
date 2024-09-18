@@ -6,11 +6,11 @@
   transition: opacity 200ms ease-in-out;
 }
 
-.ReactModal__Overlay--after-open{
+.ReactModal__Overlay--after-open {
   opacity: 1;
 }
 
-.ReactModal__Overlay--before-close{
+.ReactModal__Overlay--before-close {
   opacity: 0;
 }
 
@@ -95,6 +95,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #00000025 !important;
 }
 
-.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
   background-color: white !important;
+}
+
+.webcamContainer video {
+  transform: scaleX(-1);
 }

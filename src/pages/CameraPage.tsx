@@ -60,7 +60,7 @@ const CameraPage = () => {
 
   return (
     <FlexSpreadList>
-      <WebcamContainer>
+      <WebcamContainer className="webcamContainer">
         <Webcam ref={webcamRef} screenshotFormat="image/jpeg" />
       </WebcamContainer>
       {countdown >= 0 || isPreviewActive ? (
