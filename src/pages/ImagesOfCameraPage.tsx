@@ -3,23 +3,12 @@ import ImageGallery from "react-image-gallery";
 import { GetImages } from "../data/FirebaseConnection";
 import { CSSProperties, useEffect, useState } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
-import ClipLoader from "react-spinners/ClipLoader";
-import { ClimbingBoxLoader, PacmanLoader } from "react-spinners";
+import { PacmanLoader } from "react-spinners";
 
 const override: CSSProperties = {
   display: "block",
   margin: "auto",
   borderColor: "white",
-};
-
-const fadeProperties = {
-  duration: 10000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-
-  arrows: false,
-  canSwipe: true,
 };
 
 const ImagesOfCameraPage = () => {
@@ -37,9 +26,10 @@ const ImagesOfCameraPage = () => {
   };
 
   return (
-    <>
+    <div style={{ height: "100vh", overflowY: "hidden" }}>
       {images.length == 0 ? (
         <FlexSpreadList>
+          <p style={{ textAlign: "center", fontSize: "3em" }}>Loading...</p>
           <PacmanLoader
             color={"#ffffff"}
             loading={true}
@@ -59,7 +49,7 @@ const ImagesOfCameraPage = () => {
           />
         </FlexSpreadList>
       )}
-    </>
+    </div>
   );
 };
 
