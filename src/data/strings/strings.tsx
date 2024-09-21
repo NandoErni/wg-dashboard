@@ -10,6 +10,9 @@ export default STRINGS;
 
 export type StringType = {
   translation: {
+    general: {
+      loading: string;
+    };
     burgerMenu: {
       dutyPlan: string;
       dashboard: string;

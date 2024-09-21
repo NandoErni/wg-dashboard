@@ -4,6 +4,7 @@ import { GetImages } from "../data/FirebaseConnection";
 import { CSSProperties, useEffect, useState } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { PacmanLoader } from "react-spinners";
+import { useTranslation } from "react-i18next";
 
 const override: CSSProperties = {
   display: "block",
@@ -13,6 +14,8 @@ const override: CSSProperties = {
 
 const ImagesOfCameraPage = () => {
   const [images, setImages]: any = useState([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     GetImages().then((imgs) => setImages(imgs));
@@ -29,7 +32,9 @@ const ImagesOfCameraPage = () => {
     <div style={{ height: "100vh", overflowY: "hidden" }}>
       {images.length == 0 ? (
         <FlexSpreadList>
-          <p style={{ textAlign: "center", fontSize: "3em" }}>Loading...</p>
+          <p style={{ textAlign: "center", fontSize: "3em" }}>
+            {t("general.loading")}
+          </p>
           <PacmanLoader
             color={"#ffffff"}
             loading={true}

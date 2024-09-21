@@ -2,6 +2,9 @@ import { StringType } from "./strings";
 
 const STRING_DE: StringType = {
   translation: {
+    general: {
+      loading: "Laden...",
+    },
     burgerMenu: {
       dutyPlan: "Ämtliplan",
       dashboard: "Dashboard",
