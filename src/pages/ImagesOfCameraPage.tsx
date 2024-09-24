@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import { GetImages } from "../data/FirebaseConnection";
 import { CSSProperties, useEffect, useState } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { PacmanLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 import { useTranslation } from "react-i18next";
 
 const override: CSSProperties = {
@@ -35,7 +35,7 @@ const ImagesOfCameraPage = () => {
           <p style={{ textAlign: "center", fontSize: "3em" }}>
             {t("general.loading")}
           </p>
-          <PacmanLoader
+          <HashLoader
             color={"#ffffff"}
             loading={true}
             cssOverride={override}
@@ -47,6 +47,8 @@ const ImagesOfCameraPage = () => {
       ) : (
         <FlexSpreadList key={images.length}>
           <ImageGallery
+            autoPlay={true}
+            slideInterval={20_000}
             showFullscreenButton={false}
             showPlayButton={false}
             disableSwipe={false}
