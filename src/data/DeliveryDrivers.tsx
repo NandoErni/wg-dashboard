@@ -11,6 +11,7 @@ import ApostolosImage from "../img/driver/10_apostolos.jpg";
 import MoktarImage from "../img/driver/11_moktar.jpg";
 import AbdulSamadImage from "../img/driver/12_abdulsamad.jpg";
 import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
+import YennyImage from "../img/driver/14_yenny.jpg";
 
 import McDonalds from "../img/logos/mcdonald.png";
 import BurgerKing from "../img/logos/burgerking.png";
@@ -212,5 +213,27 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     ],
     rating: 2,
     review: "Burger sind geil gsi, isch schnell cho aber de Dip het gfehlt.",
+  },
+  {
+    name: "Yenny",
+    image: YennyImage,
+    companyImage: BurgerKing,
+    date: new Date("2024-09-18"),
+    orderItems: [
+      "1 The Sunkissed Gruyère Double AOP",
+      "Menu Sunkissed Gruyère AOP",
+      "2 Whopper",
+    ],
+    rating: 3,
+    review: "Biz verfahre",
+  },
+  {
+    name: "Abdul Samad",
+    image: AbdulSamadImage,
+    companyImage: BurgerKing,
+    date: new Date("2024-09-24"),
+    orderItems: ["2 Crispy Chicken", "2 Whopper", "1 Flame Dip"],
+    rating: 1,
+    review: "Kei Bock uf Fast-Food gha",
   },
 ];
