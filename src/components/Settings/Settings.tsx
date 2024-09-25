@@ -19,7 +19,12 @@ const Settings = () => {
     <Container>
       <SettingsLabel>{t("settings.language")}</SettingsLabel>
       <OptionButtons
-        options={["🇩🇪", "🇬🇧", "🇨🇭", "🇦🇱"]}
+        options={[
+          "\u{1F1E9}\u{1F1EA}", // 🇩🇪 Germany
+          "\u{1F1EC}\u{1F1E7}", // 🇬🇧 United Kingdom
+          "\u{1F1E8}\u{1F1ED}", // 🇨🇭 Switzerland
+          "\u{1F1E6}\u{1F1F1}", // 🇦🇱 Albania
+        ]}
         selected={selectedLanguage}
         onChangeCallback={(c: number) => setSelectedLanguage(c)}
       />
