@@ -122,6 +122,9 @@ const STRING_EN: StringType = {
       done: "Done!",
       imagePreviewInfoText: "This image can be viewed on the Images page",
     },
+    settings: {
+      language: "Language",
+    },
   },
 };
 

@@ -16,3 +16,19 @@ export const FlexSpreadList = styled.div`
   justify-content: space-evenly;
   min-height: 100vh;
 `;
+
+export const LanguageInputButtonContainer = styled.div<{
+  $isSelected: boolean;
+}>`
+  font-size: 10em;
+  border: 10px solid ${(p) => (p.$isSelected ? "#ffffff" : "#202020")};
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+
+  background-color: "#5cc0e4";
+
+  &:hover {
+    border-color: white;
+  }
+`;

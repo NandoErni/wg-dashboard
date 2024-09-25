@@ -1,9 +1,18 @@
 import STRING_EN from "./strings_en";
 import STRING_DE from "./strings_de";
+import STRING_CH from "./strings_ch";
+import STRING_SQ from "./strings_sq";
 
-const STRINGS: { en: StringType; de: StringType } = {
+const STRINGS: {
+  en: StringType;
+  de: StringType;
+  ch: StringType;
+  sq: StringType;
+} = {
   en: STRING_EN,
   de: STRING_DE,
+  ch: STRING_CH,
+  sq: STRING_SQ,
 };
 
 export default STRINGS;
@@ -80,6 +89,9 @@ export type StringType = {
     camera: {
       done: string;
       imagePreviewInfoText: string;
+    };
+    settings: {
+      language: string;
     };
   };
 };

@@ -121,6 +121,9 @@ const STRING_DE: StringType = {
       done: "Fertig!",
       imagePreviewInfoText: "Das Bild kann man auf der Bilderseite sehen",
     },
+    settings: {
+      language: "Sprache",
+    },
   },
 };
 

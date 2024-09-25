@@ -1,13 +1,10 @@
 import { FlexSpreadList } from "../components/Helper/HelperComponents";
+import Settings from "../components/Settings/Settings";
 
 const SettingsPage = () => {
   return (
     <FlexSpreadList>
-      <ul>
-        <li>Theme</li>
-        <li>Language</li>
-        <li></li>
-      </ul>
+      <Settings />
     </FlexSpreadList>
   );
 };

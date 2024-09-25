@@ -77,10 +77,10 @@ function App() {
           {t("burgerMenu.images")}
         </h2>
         {/* <h2>{t("burgerMenu.lights")}</h2>
-        <h2>{t("burgerMenu.jokeOfTheDay")}</h2>
+        <h2>{t("burgerMenu.jokeOfTheDay")}</h2>*/}
         <h2 onClick={() => changePage(<SettingsPage />)}>
           {t("burgerMenu.settings")}
-        </h2> */}
+        </h2>
       </Menu>
       <div className="App" id="outer-container">
         <AppContext.Provider

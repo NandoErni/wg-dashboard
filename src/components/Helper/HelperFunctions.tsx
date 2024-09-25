@@ -18,3 +18,16 @@ export const getStringOfWeekday = (weekDay: number): string => {
       return "Error";
   }
 };
+
+export const languageIDToLanguageCode = (id: number) => {
+  switch (id) {
+    case 0:
+      return "de";
+    case 1:
+      return "en";
+    case 2:
+      return "ch";
+    case 3:
+      return "sq"; // albanian
+  }
+};
