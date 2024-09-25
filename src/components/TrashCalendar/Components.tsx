@@ -6,6 +6,7 @@ export const Title = styled.div`
   font-size: 5.4cqw;
   margin-bottom: 10px;
   font-weight: 200;
+  text-align: center;
 `;
 export const TrashContainer = styled.div`
   justify-content: center;
