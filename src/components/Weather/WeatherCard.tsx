@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 import { Card } from "../DutyCard/Components";
 import { WeatherData } from "../../hooks/useWeatherForecast";
 import { getIconAndDescriptionFromWeatherCode } from "../Helper/WeatherFunctions";
+import { languageCodeToLocale } from "../Helper/HelperFunctions";
 
 const dateFormatOptions: any = {
   weekday: "long",
@@ -35,7 +36,10 @@ const WeatherCard = ({
   return (
     <Card>
       <WeekdayText>
-        {currentWeather.time.toLocaleString(i18n.language, dateFormatOptions)}
+        {currentWeather.time.toLocaleString(
+          languageCodeToLocale(i18n.language),
+          dateFormatOptions
+        )}
       </WeekdayText>
       <RowContainer>
         <Icon>

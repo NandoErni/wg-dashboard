@@ -11,6 +11,7 @@ import useRecurringDate, {
   dateFormatOptions,
 } from "../../hooks/useRecurringDate";
 import { useTranslation } from "react-i18next";
+import { languageCodeToLocale } from "../Helper/HelperFunctions";
 
 const TrashCalendar = () => {
   const trashDate = useRecurringDate(new Date(2024, 2, 21), 7);
@@ -25,7 +26,10 @@ const TrashCalendar = () => {
           <FontAwesomeIcon icon={faDumpster} />
         </Icon>
         <DateContainer>
-          {trashDate.toLocaleString(i18n.language, dateFormatOptions)}
+          {trashDate.toLocaleString(
+            languageCodeToLocale(i18n.language),
+            dateFormatOptions
+          )}
         </DateContainer>
       </TrashContainer>
       <TrashContainer>
@@ -33,7 +37,10 @@ const TrashCalendar = () => {
           <FontAwesomeIcon icon={faNewspaper} />
         </Icon>
         <DateContainer>
-          {paperDate.toLocaleString(i18n.language, dateFormatOptions)}
+          {paperDate.toLocaleString(
+            languageCodeToLocale(i18n.language),
+            dateFormatOptions
+          )}
         </DateContainer>
       </TrashContainer>
     </Container>

@@ -1,24 +1,3 @@
-export const getStringOfWeekday = (weekDay: number): string => {
-  switch (weekDay) {
-    case 0:
-      return "Monday";
-    case 1:
-      return "Tuesday";
-    case 2:
-      return "Wednesday";
-    case 3:
-      return "Thursday";
-    case 4:
-      return "Friday";
-    case 5:
-      return "Saturday";
-    case 6:
-      return "Sunday";
-    default:
-      return "Error";
-  }
-};
-
 export const languageIDToLanguageCode = (id: number) => {
   switch (id) {
     case 0:
@@ -29,5 +8,18 @@ export const languageIDToLanguageCode = (id: number) => {
       return "ch";
     case 3:
       return "sq"; // albanian
+  }
+};
+
+export const languageCodeToLocale = (code: string) => {
+  switch (code) {
+    case "en":
+      return "en-GB";
+    case "de":
+      return "de-DE";
+    case "ch":
+      return "de-CH";
+    case "sq":
+      return "sq-AL";
   }
 };

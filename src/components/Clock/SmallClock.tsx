@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { Container, TimeContainer, DateContainer } from "./Components";
 import { useTranslation } from "react-i18next";
 import { AppContext } from "../../App";
+import { languageCodeToLocale } from "../Helper/HelperFunctions";
 
 const dateFormatOptions: any = {
   weekday: "long",
@@ -22,8 +23,14 @@ const SmallClock = () => {
     setDateTime(currentDatetimeState);
   }, [currentDatetimeState]);
 
-  const dateString = dateTime.toLocaleString(i18n.language, dateFormatOptions);
-  const timeString = dateTime.toLocaleString(i18n.language, timeFormatOptions);
+  const dateString = dateTime.toLocaleString(
+    languageCodeToLocale(i18n.language),
+    dateFormatOptions
+  );
+  const timeString = dateTime.toLocaleString(
+    languageCodeToLocale(i18n.language),
+    timeFormatOptions
+  );
 
   return (
     <Container>

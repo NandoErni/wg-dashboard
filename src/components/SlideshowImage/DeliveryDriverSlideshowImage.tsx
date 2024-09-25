@@ -13,6 +13,7 @@ import {
   OrderItem,
   Rating,
 } from "./Components";
+import { languageCodeToLocale } from "../Helper/HelperFunctions";
 
 const DeliveryDriverSlideshowImage = ({
   image,
@@ -43,7 +44,10 @@ const DeliveryDriverSlideshowImage = ({
         <Name>{name}</Name>
         <Date>
           {t("deliveryDrivers.orderedOn")}{" "}
-          {date.toLocaleString(i18n.language, dateFormatOptions)}
+          {date.toLocaleString(
+            languageCodeToLocale(i18n.language),
+            dateFormatOptions
+          )}
         </Date>
         <Rating>{"⭐".repeat(rating)}</Rating>
         <Review>{review}</Review>
