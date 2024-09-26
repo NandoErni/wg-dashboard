@@ -40,19 +40,25 @@ export const theme_green: THEME = {
 };
 
 export const getSavedTheme = () => {
-  return themeIdToTheme(localStorage.getItem("theme") || "blue");
+  return themeIdToTheme(getSavedThemeId());
 };
 
-export const saveNewTheme = (themeId: string) =>
-  localStorage.setItem("theme", themeId);
+export const getSavedThemeId = () => {
+  return parseInt(localStorage.getItem("theme") || "0");
+};
 
-const themeIdToTheme = (id: string) => {
+export const saveNewTheme = (themeId: number) =>
+  localStorage.setItem("theme", themeId + "");
+
+export const themeIdToTheme = (id: number) => {
   switch (id) {
-    case "blue":
+    case 0:
       return theme_blue;
-    case "green":
+    case 1:
       return theme_green;
   }
+
+  throw new Error("The theme id " + id + " does not exist!");
 };
 
 export const GlobalStyle = createGlobalStyle`

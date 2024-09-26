@@ -123,6 +123,7 @@ const STRING_CH: StringType = {
     },
     settings: {
       language: "Sproch",
+      theme: "Thema",
     },
   },
 };

@@ -124,6 +124,7 @@ const STRING_EN: StringType = {
     },
     settings: {
       language: "Language",
+      theme: "Theme",
     },
   },
 };

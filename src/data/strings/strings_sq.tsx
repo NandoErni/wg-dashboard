@@ -123,6 +123,7 @@ const STRING_SQ: StringType = {
     },
     settings: {
       language: "Gjuha",
+      theme: "Tema",
     },
   },
 };

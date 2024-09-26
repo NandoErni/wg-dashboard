@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const SettingsLabel = styled.div`
   font-size: 5em;
-  margin-bottom: 20px;
+  margin: 20px;
 `;
 export const LanguageOptionsContainer = styled.div`
   display: flex;
