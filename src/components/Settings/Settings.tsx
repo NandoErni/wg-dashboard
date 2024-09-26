@@ -44,6 +44,7 @@ const Settings = () => {
         options={[
           "\u{1F535}", // blue
           "\u{1F7E2}", // green
+          "\u{1F9E0}", // pink
         ]}
         selected={selectedTheme}
         onChangeCallback={(c: number) => setSelectedTheme(c)}

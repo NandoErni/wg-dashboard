@@ -26,6 +26,19 @@ export const theme_blue: THEME = {
   },
 };
 
+export const theme_pink: THEME = {
+  colors: {
+    font: "#FFFDF9",
+    notFont: "#202020",
+    primary: "#bc4289",
+    secondary: "#e45ca9",
+    modalBackground: "#791a55",
+    selected: "#36313D",
+    fontTransparent: "#ffffff80",
+    notFontTransparent: "#00000025",
+  },
+};
+
 export const theme_green: THEME = {
   colors: {
     font: "#FFFDF9",
@@ -56,6 +69,8 @@ export const themeIdToTheme = (id: number) => {
       return theme_blue;
     case 1:
       return theme_green;
+    case 2:
+      return theme_pink;
   }
 
   throw new Error("The theme id " + id + " does not exist!");
