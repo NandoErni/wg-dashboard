@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const DutyCardContainer = (props: { getDuties: GetDuties }) => {
   const [listOfNames, setListOfNames] = useState(["Lauro", "Timon", "Nando"]);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const rotateList = () => {
     let newList = [...listOfNames];

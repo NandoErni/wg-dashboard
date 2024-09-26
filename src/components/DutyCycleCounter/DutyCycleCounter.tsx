@@ -12,7 +12,7 @@ import useRecurringDate, {
 import { useTranslation } from "react-i18next";
 
 const DutyCycleCounter = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const nextCycleChange = useRecurringDate(new Date(2024, 2, 11), 30);
   const now = new Date();
   const daysUntilNextChange = getDayDifference(now, nextCycleChange);

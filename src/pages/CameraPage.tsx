@@ -18,6 +18,7 @@ import { useRef, useState } from "react";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { useTranslation } from "react-i18next";
 import { AddImage } from "../data/FirebaseConnection";
+import { useTheme } from "styled-components";
 
 const COUNTDOWN_TIMER = 5;
 const PREVIEW_TIMER = 1000;
@@ -29,6 +30,7 @@ const CameraPage = () => {
   const [countdown, setCountdown] = useState(-1);
   const [isPreviewActive, setIsPreviewActive] = useState(false);
   const [previewCountdown, setPreviewCountdown] = useState(0);
+  const theme = useTheme();
 
   const handleCaptureClick = () => {
     setCountdown(COUNTDOWN_TIMER);
@@ -84,9 +86,9 @@ const CameraPage = () => {
                   value={previewCountdown}
                   text={""}
                   styles={buildStyles({
-                    textColor: "white",
-                    pathColor: "white",
-                    trailColor: "#00000025",
+                    textColor: theme.colors.font,
+                    pathColor: theme.colors.font,
+                    trailColor: theme.colors.notFontTransparent,
                   })}
                 />
               </DoneModalProgressbarContainer>

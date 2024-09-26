@@ -16,7 +16,7 @@ const OptionButtons = ({
         <LanguageInputButton
           flag={option}
           key={index}
-          isSelected={index == selected}
+          isSelected={index === selected}
           onClick={() => onChangeCallback(index)}
         />
       ))}

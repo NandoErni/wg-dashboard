@@ -11,6 +11,7 @@ import { Card } from "../DutyCard/Components";
 import { WeatherData } from "../../hooks/useWeatherForecast";
 import { getIconAndDescriptionFromWeatherCode } from "../Helper/WeatherFunctions";
 import { languageCodeToLocale } from "../Helper/HelperFunctions";
+import { useTheme } from "styled-components";
 
 const dateFormatOptions: any = {
   weekday: "long",
@@ -24,6 +25,7 @@ const WeatherCard = ({
   currentWeatherIndex: number;
 }) => {
   const { t, i18n } = useTranslation();
+  const theme = useTheme();
 
   const currentWeather = weather[currentWeatherIndex];
 
@@ -44,7 +46,7 @@ const WeatherCard = ({
       <RowContainer>
         <Icon>
           <weatherCodeDescription.icon
-            style={{ color: "white", height: "100%", width: "100%" }}
+            style={{ color: theme.colors.font, height: "100%", width: "100%" }}
           />
         </Icon>
         <ColumnContainer>

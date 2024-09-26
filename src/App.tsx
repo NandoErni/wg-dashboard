@@ -9,6 +9,8 @@ import SettingsPage from "./pages/SettingsPage";
 import WifiPage from "./pages/WifiPage";
 import CameraPage from "./pages/CameraPage";
 import ImagesOfCameraPage from "./pages/ImagesOfCameraPage";
+import styled, { ThemeProvider } from "styled-components";
+import { GlobalStyle, theme_blue } from "./Theme";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -21,12 +23,17 @@ export const AppContext = createContext<AppContextType>({
   currentDatetimeHourlyState: new Date(),
 });
 
+const AppContainer = styled.div`
+  background-color: ${(props) => props.theme.colors.primary};
+`;
+
 function App() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(<DashboardPage />);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [currentDateHourly, setCurrentDateHourly] = useState(new Date());
+  const [activeTheme, setActiveTheme] = useState(theme_blue);
 
   const changePage = (newPage: JSX.Element) => {
     setCurrentPage(newPage);
@@ -82,18 +89,21 @@ function App() {
           {t("burgerMenu.settings")}
         </h2>
       </Menu>
-      <div className="App" id="outer-container">
-        <AppContext.Provider
-          value={{
-            currentDatetimeState: currentDate,
-            currentDatetimeHourlyState: currentDateHourly,
-          }}
-        >
-          <div id="page-wrap" style={{ height: "100%" }}>
-            {currentPage}
-          </div>
-        </AppContext.Provider>
-      </div>
+      <ThemeProvider theme={activeTheme}>
+        <GlobalStyle />
+        <AppContainer id="outer-container">
+          <AppContext.Provider
+            value={{
+              currentDatetimeState: currentDate,
+              currentDatetimeHourlyState: currentDateHourly,
+            }}
+          >
+            <div id="page-wrap" style={{ height: "100%" }}>
+              {currentPage}
+            </div>
+          </AppContext.Provider>
+        </AppContainer>
+      </ThemeProvider>
     </>
   );
 }

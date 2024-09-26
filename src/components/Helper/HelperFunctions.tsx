@@ -20,6 +20,6 @@ export const languageCodeToLocale = (code: string) => {
     case "ch":
       return "de-CH";
     case "sq":
-      return "sq-AL";
+      return "sq";
   }
 };

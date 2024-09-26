@@ -5,15 +5,16 @@ import { CSSProperties, useEffect, useState } from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { HashLoader } from "react-spinners";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "styled-components";
 
 const override: CSSProperties = {
   display: "block",
   margin: "auto",
-  borderColor: "white",
 };
 
 const ImagesOfCameraPage = () => {
   const [images, setImages]: any = useState([]);
+  const theme = useTheme();
 
   const { t } = useTranslation();
 
@@ -30,13 +31,13 @@ const ImagesOfCameraPage = () => {
 
   return (
     <div style={{ height: "100vh", overflowY: "hidden" }}>
-      {images.length == 0 ? (
+      {images.length === 0 ? (
         <FlexSpreadList>
           <p style={{ textAlign: "center", fontSize: "3em" }}>
             {t("general.loading")}
           </p>
           <HashLoader
-            color={"#ffffff"}
+            color={theme.colors.font}
             loading={true}
             cssOverride={override}
             size={150}

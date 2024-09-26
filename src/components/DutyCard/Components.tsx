@@ -9,26 +9,26 @@ export const Card = styled.div`
   text-align: center;
   border: 0px solid #282c34;
   border-radius: 20px;
-  background-color: #5cc0e4;
+  background-color: ${(props) => props.theme.colors.secondary};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const Icon = styled.div`
   font-size: 11em;
-  color: #ffffff80;
+  color: ${(props) => props.theme.colors.fontTransparent};
 `;
 
 export const SubTitle = styled.div`
   font-size: 1.1em;
   font-weight: lighter;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.font};
 `;
 
 export const Title = styled.div`
   margin-top: 1em;
   font-size: 2em;
   text-align: center;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.font};
 `;
 
 export const Name = styled.div`
@@ -37,7 +37,7 @@ export const Name = styled.div`
 
 export const DutyModalContainer = styled.div`
   width: 100%;
-  background-color: #1a5e79;
+  background-color: ${(props) => props.theme.colors.modalBackground};
 `;
 
 export const DutyModalTitle = styled.div`
@@ -50,7 +50,7 @@ export const Quote = styled.div`
   text-align: center;
   font-style: italic;
   font-size: 1.2em;
-  color: #ffffffa0;
+  color: ${(props) => props.theme.colors.fontTransparent};
 `;
 
 export const Seperator = styled.hr`

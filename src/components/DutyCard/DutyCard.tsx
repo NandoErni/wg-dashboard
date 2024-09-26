@@ -4,33 +4,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Modal from "react-modal";
 import DutyModal from "./DutyModal";
 import { Duty } from "../../data/Duties";
+import { useTheme } from "styled-components";
 
 type DutyCardProps = {
   name: string;
   duty: Duty;
 };
 
-const customStyles = {
-  overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.75)",
-  },
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    backgroundColor: "#1a5e79",
-    borderRadius: "20px",
-    border: "0px",
-    height: "80vh",
-    width: "40vw",
-  },
-};
-
 const DutyCard = (props: DutyCardProps) => {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const theme = useTheme();
+  const customStyles = {
+    overlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.75)",
+    },
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      backgroundColor: theme.colors.modalBackground,
+      borderRadius: "20px",
+      border: "0px",
+      height: "80vh",
+      width: "40vw",
+    },
+  };
+
   Modal.setAppElement("#root");
 
   function openModal() {

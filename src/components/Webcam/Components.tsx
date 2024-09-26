@@ -83,12 +83,12 @@ export const DoneModal = styled.div`
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: #000000a0;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
 `;
 
 export const DoneModalBody = styled.div`
-  background-color: #1a5e79;
+  background-color: ${(props) => props.theme.colors.modalBackground};
   min-height: 80%;
   min-width: 80%;
   max-width: 90%;

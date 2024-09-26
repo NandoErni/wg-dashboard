@@ -7,11 +7,13 @@ import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import { getNextBusTime } from "../../data/BusTimes";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../App";
+import { useTheme } from "styled-components";
 
 const BusClock = () => {
   const { currentDatetimeState } = useContext(AppContext);
   const [minutesTillNextBus, setMinutesTillNextBus] = useState(95);
   const [maxMinutesTillNextBus, setMaxMinutesTillNextBus] = useState(0);
+  const theme = useTheme();
 
   useEffect(() => {
     if (minutesTillNextBus <= 0) {
@@ -45,9 +47,9 @@ const BusClock = () => {
           value={minutesTillNextBus}
           text={`${Math.round(minutesTillNextBus / 60)}'`}
           styles={buildStyles({
-            textColor: "white",
-            pathColor: "white",
-            trailColor: "#00000025",
+            textColor: theme.colors.font,
+            pathColor: theme.colors.font,
+            trailColor: theme.colors.notFontTransparent,
           })}
         />
       </ProgressbarContainer>

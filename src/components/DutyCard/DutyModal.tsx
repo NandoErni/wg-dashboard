@@ -17,7 +17,7 @@ interface DutyModalProps {
 }
 
 const DutyModal = (props: DutyModalProps) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <DutyModalContainer>
       <DutyModalTitle>{props.duty.name}</DutyModalTitle>

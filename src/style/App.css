@@ -1,6 +1,3 @@
-.App {
-  background-color: #4299bc;
-}
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
@@ -25,24 +22,13 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #ffffff;
   border-radius: 10px;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #eeeeee;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
   width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
 }
 
 /*
@@ -55,19 +41,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #1a5e79;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #383c44;
-}
-
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   margin: 0.8em;
   max-height: 80%; /* weird, but it works*/
 }
@@ -80,23 +59,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Individual item */
 .bm-item {
   display: inline-block;
-  color: #d1d1d1;
   margin-bottom: 10px;
   text-align: left;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.bm-item:hover {
-  color: #ffffff;
-}
-
 .rw-container-main {
   background: #00000025 !important;
-}
-
-.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
-  background-color: white !important;
 }
 
 .webcamContainer video {

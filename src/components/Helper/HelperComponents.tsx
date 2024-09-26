@@ -21,14 +21,15 @@ export const LanguageInputButtonContainer = styled.div<{
   $isSelected: boolean;
 }>`
   font-size: 10em;
-  border: 10px solid ${(p) => (p.$isSelected ? "#ffffff" : "#202020")};
+  border: 10px solid
+    ${(p) => (p.$isSelected ? p.theme.colors.font : p.theme.colors.notFont)};
   border-radius: 200px;
   width: 200px;
   height: 200px;
 
-  background-color: "#5cc0e4";
+  background-color: ${(props) => props.theme.colors.secondary};
 
   &:hover {
-    border-color: white;
+    border-color: ${(props) => props.theme.colors.font};
   }
 `;
