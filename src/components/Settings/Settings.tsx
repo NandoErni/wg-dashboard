@@ -33,6 +33,7 @@ const Settings = () => {
           "\u{1F1EC}\u{1F1E7}", // 🇬🇧 United Kingdom
           "\u{1F1E8}\u{1F1ED}", // 🇨🇭 Switzerland
           "\u{1F1E6}\u{1F1F1}", // 🇦🇱 Albania
+          "\u{1F1EA}\u{1F1EA}", // 🇪🇪 Estonia
         ]}
         selected={selectedLanguage}
         onChangeCallback={(c: number) => setSelectedLanguage(c)}

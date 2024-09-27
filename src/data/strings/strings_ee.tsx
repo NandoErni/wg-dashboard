@@ -1,0 +1,130 @@
+import { StringType } from "./strings";
+
+const STRING_EE: StringType = {
+  translation: {
+    general: {
+      loading: "Laadimine...",
+    },
+    burgerMenu: {
+      dutyPlan: "Tööplaan",
+      dashboard: "Töölaud",
+      lights: "Tuled",
+      jokeOfTheDay: "Päeva nali",
+      settings: "Seaded",
+      deliveryDriver: "Kohaletoimetaja",
+      wifi: "Wi-Fi",
+      camera: "Kaamera",
+      images: "Pildid",
+    },
+    dutyCard: {
+      tasks: "Ülesanded",
+      tasksInDetail: "Ülesanded üksikasjalikult",
+      everyWeek: "Igal nädalal",
+      everyXWeeks_one: "Iga {{count}} nädal",
+      everyXWeeks_other: "Iga {{count}} nädalat",
+      day_one: "{{count}} päev",
+      day_other: "{{count}} päeva",
+    },
+    trashCalendar: {
+      title: "Prügikalender",
+    },
+    duties: {
+      bathroom: {
+        name: "Vannituba",
+        quote: "Kes situb kellegi tassi, peab tagajärgedega arvestama!",
+        generalTasks: {
+          bathroom: "Vannituba",
+          trash: "Prügi",
+        },
+        detailedTasks: {
+          cleanToilet: "Puhasta WC",
+          cleanSink: "Puhasta valamu",
+          cleanShower: "Puhasta dušš",
+          cleanFurniture: "Puhasta mööbel",
+          disposeTrash: "Eemalda prügi",
+          disposeCompost: "Eemalda kompost",
+        },
+      },
+      floor: {
+        name: "Põrandad",
+        quote: "Põrand hoiab meid igavesti!",
+        generalTasks: {
+          livingRoom: "Elutuba",
+          floor: "Põrand",
+          glasAndCans: "Klaas & purgid",
+        },
+        detailedTasks: {
+          cleanSofa: "Puhasta diivan",
+          lamps: "Lambid",
+          vacuumClean: "Tolmuimeja",
+          wipeFloor: "Puhasta põrand",
+          disposeGlasAndCans: "Eemalda klaas & purgid",
+          waterPlants: "Kasta taimi",
+        },
+      },
+      kitchen: {
+        name: "Köök",
+        quote: "Ilma El Tony'ta ei saavuta isegi parim midagi!",
+        generalTasks: {
+          kitchen: "Köök",
+          petAndPlasticBottles: "PET- ja plastpudelid",
+          cardboardAndPaper: "Papp ja paber",
+        },
+        detailedTasks: {
+          cleanStoveTableAndSink: "Puhasta pliit, laud ja valamu",
+          cleanSurfaces: "Puhasta pinnad",
+          cleanTrashCabinet: "Puhasta prügikapp",
+          cleanSteamExhaust: "Puhasta õhupuhasti",
+          disposeCardboardAndPaper: "Eemalda papp ja paber",
+          disposePetAndPlasticBottles: "Eemalda PET- ja plastpudelid",
+        },
+      },
+    },
+    weatherCodes: {
+      sunny: "Päikseline",
+      clear: "Selge",
+      mainlySunny: "Peamiselt päikseline",
+      mainlyClear: "Peamiselt selge",
+      partlyCloudy: "Osaliselt pilves",
+      cloudy: "Pilves",
+      foggy: "Udune",
+      rimeFog: "Härmas udu",
+      lightDrizzle: "Kerge vihmasabin",
+      drizzle: "Vihmasabin",
+      heavyDrizzle: "Tugev vihmasabin",
+      lightFreezingDrizzle: "Kerge jäine vihmasabin",
+      freezingDrizzle: "Jäine vihmasabin",
+      lightRain: "Kerge vihm",
+      rain: "Vihm",
+      heavyRain: "Tugev vihm",
+      lightFreezingRain: "Kerge jäine vihm",
+      freezingRain: "Jäine vihm",
+      lightSnow: "Kerge lumi",
+      snow: "Lumi",
+      heavySnow: "Tugev lumi",
+      snowGrains: "Lumeterad",
+      lightShowers: "Kerged hoovihmad",
+      showers: "Hoovihmad",
+      heavyShowers: "Tugevad hoovihmad",
+      lightSnowShowers: "Kerged lumesajud",
+      snowShowers: "Lumesajud",
+      thunderstorm: "Äike",
+      lightThunderstormsWithHail: "Kerge äike rahega",
+      thunderstormWithHail: "Äike rahega",
+    },
+    deliveryDrivers: {
+      orderedOn: "Tellitud",
+      order: "Tellimus:",
+    },
+    camera: {
+      done: "Valmis!",
+      imagePreviewInfoText: "Pilti saab vaadata piltide lehel",
+    },
+    settings: {
+      language: "Keel",
+      theme: "Teema",
+    },
+  },
+};
+
+export default STRING_EE;

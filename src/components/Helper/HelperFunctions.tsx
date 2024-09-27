@@ -8,6 +8,8 @@ export const languageIDToLanguageCode = (id: number) => {
       return "ch";
     case 3:
       return "sq"; // albanian
+    case 4:
+      return "ee"; // estonian
   }
 };
 
@@ -21,5 +23,7 @@ export const languageCodeToLocale = (code: string) => {
       return "de-CH";
     case "sq":
       return "sq";
+    case "ee":
+      return "et-EE";
   }
 };

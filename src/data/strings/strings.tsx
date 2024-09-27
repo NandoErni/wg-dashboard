@@ -2,17 +2,20 @@ import STRING_EN from "./strings_en";
 import STRING_DE from "./strings_de";
 import STRING_CH from "./strings_ch";
 import STRING_SQ from "./strings_sq";
+import STRING_EE from "./strings_ee";
 
 const STRINGS: {
   en: StringType;
   de: StringType;
   ch: StringType;
   sq: StringType;
+  ee: StringType;
 } = {
   en: STRING_EN,
   de: STRING_DE,
   ch: STRING_CH,
   sq: STRING_SQ,
+  ee: STRING_EE,
 };
 
 export default STRINGS;
