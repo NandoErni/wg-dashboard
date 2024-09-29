@@ -12,6 +12,7 @@ import MoktarImage from "../img/driver/11_moktar.jpg";
 import AbdulSamadImage from "../img/driver/12_abdulsamad.jpg";
 import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
 import YennyImage from "../img/driver/14_yenny.jpg";
+import JasothanImage from "../img/driver/15_jasothan.jpg";
 
 import McDonalds from "../img/logos/mcdonald.png";
 import BurgerKing from "../img/logos/burgerking.png";
@@ -235,5 +236,18 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     orderItems: ["2 Crispy Chicken", "2 Whopper", "1 Flame Dip"],
     rating: 1,
     review: "Kei Bock uf Fast-Food gha",
+  },
+  {
+    name: "Jasothan",
+    image: JasothanImage,
+    companyImage: OhMyGreek,
+    date: new Date("2024-09-28"),
+    orderItems: [
+      "1 Pita (Spezialangebot)",
+      "3 Pita (Spezialangebot)",
+      "2 Pita (Spezialangebot)",
+    ],
+    rating: 4,
+    review: "Isch für de Marti Alexander igsprunge",
   },
 ];
