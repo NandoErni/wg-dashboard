@@ -96,6 +96,7 @@ export type StringType = {
     settings: {
       language: string;
       theme: string;
+      reload: string;
     };
   };
 };

@@ -1,10 +1,15 @@
 import { useContext, useEffect, useState } from "react";
-import { Container, SettingsLabel } from "./Components";
+import {
+  Container,
+  LanguageOptionsContainer,
+  SettingsLabel,
+} from "./Components";
 import OptionButtons from "./OptionButtons";
 import { useTranslation } from "react-i18next";
 import { languageIDToLanguageCode } from "../Helper/HelperFunctions";
 import { getSavedThemeId, saveNewTheme } from "../../Theme";
 import { AppContext } from "../../App";
+import LanguageInputButton from "../Helper/LanguageInputButton";
 
 const Settings = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(
@@ -50,6 +55,15 @@ const Settings = () => {
         selected={selectedTheme}
         onChangeCallback={(c: number) => setSelectedTheme(c)}
       />
+
+      <SettingsLabel>{t("settings.reload")}</SettingsLabel>
+      <LanguageOptionsContainer>
+        <LanguageInputButton
+          flag={"\u{1F504}"}
+          isSelected={false}
+          onClick={() => window.location.reload()}
+        />
+      </LanguageOptionsContainer>
     </Container>
   );
 };

@@ -124,6 +124,7 @@ const STRING_DE: StringType = {
     settings: {
       language: "Sprache",
       theme: "Thema",
+      reload: "Website neu laden",
     },
   },
 };

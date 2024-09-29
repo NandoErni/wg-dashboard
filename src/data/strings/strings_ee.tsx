@@ -123,6 +123,7 @@ const STRING_EE: StringType = {
     settings: {
       language: "Keel",
       theme: "Teema",
+      reload: "Laadi veebisait uuesti",
     },
   },
 };
