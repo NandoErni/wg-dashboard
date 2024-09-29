@@ -1,9 +1,11 @@
+import { BUS_TIMES_SATURDAYS } from "./BusTimesSaturdays";
+import { BUS_TIMES_SUNDAYS } from "./BusTimesSundays";
 import { BUS_TIMES_WEEKDAYS } from "./BusTimesWeekdays";
 
 export const getNextBusTime = (): Date => {
   const now = new Date();
 
-  const currentBusTimes = BUS_TIMES.mondayToFriday;
+  const currentBusTimes = getBusTimesOfDate(now);
 
   let bushour = currentBusTimes[0];
   const timeWithCurrentHour = new Date();
@@ -25,6 +27,18 @@ export const getNextBusTime = (): Date => {
   return busTime;
 };
 
+const getBusTimesOfDate = (date: Date) => {
+  if (date.getDay() === 6) {
+    return BUS_TIMES.sundayAndHoliday;
+  }
+
+  if (date.getDay() === 5) {
+    return BUS_TIMES.saturday;
+  }
+
+  return BUS_TIMES.mondayToFriday;
+};
+
 export type BusHour = {
   hour: number;
   minute: number;
@@ -38,6 +52,6 @@ type BusTimes = {
 
 const BUS_TIMES: BusTimes = {
   mondayToFriday: BUS_TIMES_WEEKDAYS,
-  saturday: BUS_TIMES_WEEKDAYS,
-  sundayAndHoliday: BUS_TIMES_WEEKDAYS,
+  saturday: BUS_TIMES_SATURDAYS,
+  sundayAndHoliday: BUS_TIMES_SUNDAYS,
 };

@@ -561,4 +561,8 @@ export const BUS_TIMES_WEEKDAYS: BusHour[] = [
     hour: 23,
     minute: 35,
   },
+  {
+    hour: 23,
+    minute: 50,
+  },
 ];

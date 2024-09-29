@@ -20,7 +20,7 @@ export const FlexSpreadList = styled.div`
 export const LanguageInputButtonContainer = styled.div<{
   $isSelected: boolean;
 }>`
-  font-size: 10em;
+  font-size: 9em;
   border: 10px solid
     ${(p) => (p.$isSelected ? p.theme.colors.font : p.theme.colors.notFont)};
   border-radius: 200px;

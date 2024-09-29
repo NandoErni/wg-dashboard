@@ -4,7 +4,7 @@ import "react-circular-progressbar/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, ProgressbarContainer } from "./Components";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { getNextBusTime } from "../../data/BusTimes";
+import { getNextBusTime } from "../../data/busTimes/BusTimes";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../App";
 import { useTheme } from "styled-components";
