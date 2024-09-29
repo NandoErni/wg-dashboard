@@ -6,7 +6,7 @@ import useRecurringDate from "../../hooks/useRecurringDate";
 import { useTranslation } from "react-i18next";
 
 const DutyCardContainer = (props: { getDuties: GetDuties }) => {
-  const [listOfNames, setListOfNames] = useState(["Lauro", "Timon", "Nando"]);
+  const [listOfNames, setListOfNames] = useState(["Nando", "Lauro", "Timon"]);
   const { t } = useTranslation();
 
   const rotateList = () => {
