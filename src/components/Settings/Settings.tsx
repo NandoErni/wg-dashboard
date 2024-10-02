@@ -59,7 +59,7 @@ const Settings = () => {
       <SettingsLabel>{t("settings.reload")}</SettingsLabel>
       <LanguageOptionsContainer>
         <LanguageInputButton
-          flag={"\u{1F504}"}
+          flag={"R"}
           isSelected={false}
           onClick={() => window.location.reload()}
         />

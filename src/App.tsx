@@ -10,7 +10,13 @@ import WifiPage from "./pages/WifiPage";
 import CameraPage from "./pages/CameraPage";
 import ImagesOfCameraPage from "./pages/ImagesOfCameraPage";
 import styled, { ThemeProvider } from "styled-components";
-import { GlobalStyle, THEME, theme_blue, themeIdToTheme } from "./Theme";
+import {
+  getSavedTheme,
+  GlobalStyle,
+  THEME,
+  theme_blue,
+  themeIdToTheme,
+} from "./Theme";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -38,7 +44,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(<DashboardPage />);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [currentDateHourly, setCurrentDateHourly] = useState(new Date());
-  const [activeTheme, setActiveTheme] = useState<THEME>(theme_blue);
+  const [activeTheme, setActiveTheme] = useState<THEME>(getSavedTheme());
 
   const changePage = (newPage: JSX.Element) => {
     setCurrentPage(newPage);
