@@ -250,4 +250,19 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     rating: 4,
     review: "Isch für de Marti Alexander igsprunge",
   },
+  {
+    name: "Sarbaz",
+    image: SarbazImage,
+    companyImage: BurgerKing,
+    date: new Date("2024-10-6"),
+    orderItems: [
+      "2 Red Bull",
+      "1 King fusion OREO",
+      "1 Nutella Sundae",
+      "1 Brookie",
+      "3 Flame Dip",
+    ],
+    rating: 2,
+    review: "Het Pause gmacht und zwei Zwüschestops",
+  },
 ];
