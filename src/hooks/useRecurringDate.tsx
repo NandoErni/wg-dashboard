@@ -30,13 +30,19 @@ const useRecurringDate = (initDate: Date, intervalInDays: number) => {
     updateNewDate(new Date());
   }, []);
 
+  useEffect(() => {
+    if (nextDate < new Date()) {
+      updateNewDate(new Date());
+    }
+  }, [nextDate]);
+
   const updateNewDate = (currentDate: Date) => {
     let newDate = new Date(nextDate);
-    while (newDate < currentDate) {
+    if (newDate < currentDate) {
       newDate = new Date(newDate);
       newDate.setDate(newDate.getDate() + intervalInDays);
+      setNextDate(newDate);
     }
-    setNextDate(newDate);
   };
 
   return nextDate;
