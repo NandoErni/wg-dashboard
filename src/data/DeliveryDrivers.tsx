@@ -13,12 +13,14 @@ import AbdulSamadImage from "../img/driver/12_abdulsamad.jpg";
 import VladoMadarImage from "../img/driver/13_vladomadar.jpg";
 import YennyImage from "../img/driver/14_yenny.jpg";
 import JasothanImage from "../img/driver/15_jasothan.jpg";
+import DarwinImage from "../img/driver/16_darwin.jpg";
 
 import McDonalds from "../img/logos/mcdonald.png";
 import BurgerKing from "../img/logos/burgerking.png";
 import OhMyGreek from "../img/logos/ohmygreek.svg";
 import HappyFenster from "../img/logos/happyfenster.png";
 import HolyCow from "../img/logos/holycow.png";
+import Molino from "../img/logos/molino.png";
 
 export type DeliveryDriver = {
   image: string;
@@ -264,5 +266,14 @@ export const DeliveryDrivers: DeliveryDriver[] = [
     ],
     rating: 2,
     review: "Het Pause gmacht und zwei Zwüschestops",
+  },
+  {
+    name: "Darwin",
+    image: DarwinImage,
+    companyImage: Molino,
+    date: new Date("2024-10-20"),
+    orderItems: ["2 Pizza Miss Italia", "2 Coca-Cola Zero 33cl"],
+    rating: 5,
+    review: "Darwin haha",
   },
 ];
