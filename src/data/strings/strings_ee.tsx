@@ -15,6 +15,7 @@ const STRING_EE: StringType = {
       wifi: "Wi-Fi",
       camera: "Kaamera",
       images: "Pildid",
+      scavengerhunt: "Ajujaht",
     },
     dutyCard: {
       tasks: "Ülesanded",

@@ -15,6 +15,7 @@ const STRING_SQ: StringType = {
       wifi: "Wi-Fi",
       camera: "Kamera",
       images: "Fotot",
+      scavengerhunt: "Fshesar",
     },
     dutyCard: {
       tasks: "Detyrat",

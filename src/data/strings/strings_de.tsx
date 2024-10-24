@@ -15,6 +15,7 @@ const STRING_DE: StringType = {
       wifi: "WLAN",
       camera: "Kamera",
       images: "Bilder",
+      scavengerhunt: "Schnitzeljagd",
     },
     dutyCard: {
       tasks: "Aufgaben",

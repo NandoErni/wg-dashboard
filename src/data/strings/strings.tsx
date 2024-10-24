@@ -33,6 +33,7 @@ export type StringType = {
       settings: string;
       deliveryDriver: string;
       wifi: string;
+      scavengerhunt: string;
       camera: string;
       images: string;
     };

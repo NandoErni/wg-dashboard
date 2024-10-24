@@ -15,6 +15,7 @@ const STRING_EN: StringType = {
       wifi: "WiFi",
       camera: "Camera",
       images: "Images",
+      scavengerhunt: "Scavenger hunt",
     },
     dutyCard: {
       tasks: "Tasks",

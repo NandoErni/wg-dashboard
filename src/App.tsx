@@ -10,13 +10,8 @@ import WifiPage from "./pages/WifiPage";
 import CameraPage from "./pages/CameraPage";
 import ImagesOfCameraPage from "./pages/ImagesOfCameraPage";
 import styled, { ThemeProvider } from "styled-components";
-import {
-  getSavedTheme,
-  GlobalStyle,
-  THEME,
-  theme_blue,
-  themeIdToTheme,
-} from "./Theme";
+import { getSavedTheme, GlobalStyle, THEME, themeIdToTheme } from "./Theme";
+import ScavengerHuntPage from "./pages/ScavengerHuntPage";
 
 const HOUR_IN_MS = 3600_000;
 
@@ -88,6 +83,9 @@ function App() {
         </h2>
 
         <h2 onClick={() => changePage(<WifiPage />)}>{t("burgerMenu.wifi")}</h2>
+        <h2 onClick={() => changePage(<ScavengerHuntPage />)}>
+          {t("burgerMenu.scavengerhunt")}
+        </h2>
         <h2 onClick={() => changePage(<CameraPage />)}>
           {t("burgerMenu.camera")}
         </h2>
